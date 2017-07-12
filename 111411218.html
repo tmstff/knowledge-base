@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Microservices - a security Nightmare?</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">root</a></span>
+                            </li>
+                                                    <li>
+                                
+                            </li>
+                                                    <li>
+                                <span><a href="2015-goto_111411202.html">2015 goto</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                             Microservices - a security Nightmare?
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+
+
+
+
+
+
+
+            Created by <span class='author'> Tim Steffens</span>, last modified on Dec 14, 2015
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p class="p1"><a href="http://gotocon.com/berlin-2015/presentation/Microservices%20-%20A%20Security%20Nightmare" class="external-link" rel="nofollow">http://gotocon.com/berlin-2015/presentation/Microservices%20-%20A%20Security%20Nightmare</a>?</p><p class="p1"><span class="s1"><a href="http://container-solutions.com" class="external-link" rel="nofollow">container-solutions.com</a></span></p><ul class="ul1"><li class="li1"><span class="s1">attack surface bigger for micro-services</span></li><ul class="ul2"><li class="li1"><span class="s1">more apps</span></li><li class="li1"><span class="s1">different technologies</span></li><ul class="ul3"><li class="li1"><span class="s1">how to keep track of vulnerabilities</span></li></ul><li class="li1"><span class="s1">internal APIs are exposed over the network</span></li></ul><li class="li1"><span class="s1">security gates</span></li><ul class="ul2"><li class="li1"><span class="s1">security testing</span></li><li class="li1"><span class="s1">fits well for waterfall</span></li><li class="li1"><span class="s1">how to do thread modeling and risk assessment in CD?</span></li></ul><li class="li1"><span class="s1">DevOps vs. Specialists</span></li><li class="li1"><span class="s1">Containers: breakouts possible</span></li><li class="li1"><span class="s1">Microservice system:</span></li><ul class="ul2"><li class="li1"><span class="s1">breaches are limited</span></li><li class="li1"><span class="s1">only the data they need (need to know principle)</span></li><li class="li1"><span class="s1">allows distribution among different network zones</span></li><li class="li1"><span class="s1">AWS: different VPCs for different Teams</span></li></ul><li class="li1"><span class="s1">You can secure microservices with SSO</span></li><ul class="ul2"><li class="li1"><span class="s1">openId</span></li><li class="li1"><span class="s1">SAML</span></li><li class="li1"><span class="s1">OpenIdConnect</span></li><ul class="ul3"><li class="li1"><span class="s1">ID Tokens</span></li></ul><li class="li1"><span class="s1">it's good if receiving services can verify the signature by themselves</span></li><li class="li1"><span class="s1">oauth2</span></li></ul><li class="li1"><span class="s1"><a href="https://en.wikipedia.org/wiki/Confused_deputy_problem" class="external-link" rel="nofollow">The confused Deputy</a></span></li><li class="li1"><span class="s1">API Gateways can be useful for</span></li><ul class="ul2"><li class="li1"><span class="s1">access control</span></li><li class="li1"><span class="s1">rate limiting</span></li><li class="li1"><span class="s1">https termination</span></li><li class="li1"><span class="s1">Use WAF only for security critical services</span></li></ul><li class="li1"><span class="s1">the &quot;zoo&quot; of technologies</span></li><ul class="ul2"><li class="li1"><span class="s1">reduces the risk of one vulnerability compromising the whole system</span></li></ul><li class="li1"><span class="s1">Security in an agile microservice world</span></li><ul class="ul2"><li class="li1"><span class="s1">Trust the teams, they need:</span></li><ul class="ul3"><li class="li1"><span class="s1">Accountability</span></li><li class="li1"><span class="s1">Expertise</span></li><li class="li1"><span class="s1">Support</span></li><li class="li1"><span class="s1">Softwarecraftsmanship</span></li></ul><li class="li1"><span class="s1">Security should be part of the DOD</span></li><li class="li1"><span class="s1">&quot;Baked into&quot; the software</span></li><li class="li1"><span class="s1"><a href="http://ruggedsoftware.org" class="external-link" rel="nofollow">ruggedsoftware.org</a></span><ul class="ul2"><li class="li1"><a href="https://www.ruggedsoftware.org/wp-content/uploads/2013/11/Rugged-Handbook-v7.pdf" class="external-link" rel="nofollow">https://www.ruggedsoftware.org/wp-content/uploads/2013/11/Rugged-Handbook-v7.pdf</a></li><li class="li1"><a href="https://www.ruggedsoftware.org/wp-content/uploads/2013/11/Rugged-Implementation-Guide-v4.pdf" class="external-link" rel="nofollow">https://www.ruggedsoftware.org/wp-content/uploads/2013/11/Rugged-Implementation-Guide-v4.pdf</a></li></ul></li></ul><li class="li1"><span class="s1">Important: Mindset and Tooling for &quot;SecOps&quot;</span></li><ul class="ul2"><li class="li1"><span class="s1">Tooling for devs is missing</span></li><ul class="ul3"><li class="li1"><span class="s1">hardened base images</span></li><li class="li1"><span class="s1">integration in security logging</span></li></ul><li class="li1"><span class="s1">Continous delivery</span></li><ul class="ul3"><li class="li1"><span class="s1">Most important security Feature</span></li><li class="li1"><span class="s1">quick bugfixes</span></li><li class="li1"><span class="s1">use automated security checks (check slides!)</span></li></ul><li class="li1"><span class="s1"><a href="http://continuumsecurity.net/bdd-intro" class="external-link" rel="nofollow">continuumsecurity.net/bdd-intro</a></span></li><li class="li1"><span class="s1">run services of different security levels on different hosts</span></li><li class="li1"><span class="s1"><a href="http://tinyurl.com/docker-security" class="external-link" rel="nofollow">tinyurl.com/docker-security</a></span><ul class="ul2"><li class="li1"><a href="https://gallery.mailchimp.com/979c70339150d05eec1531104/files/Docker_Security_Red_Hat.pdf" class="external-link" rel="nofollow">https://gallery.mailchimp.com/979c70339150d05eec1531104/files/Docker_Security_Red_Hat.pdf</a></li></ul><ul class="ul3"><li class="li1"><span class="s1">run container in read-only-mode</span></li><li class="li1"><span class="s1">minimal base images</span></li><li class="li1"><span class="s1">drop capabilities</span></li><li class="li1"><span class="s1">verify signed images</span></li><li class="li1"><span class="s1">Hardening: AppArmor, SELinux</span></li></ul></li><li class="li1"><span class="s1">Scan images for vulnerabilities</span></li><ul class="ul3"><li class="li1"><span class="s1">Nautilus</span></li><li class="li1"><span class="s1">Clair</span></li><li class="li1"><span class="s1">Twistlock</span></li><li class="li1"><span class="s1">Scalock</span></li></ul><li class="li1"><span class="s1">Secure deployments</span></li><ul class="ul3"><li class="li1"><span class="s1">TLS, authentication, Authorization, Loggin &amp; Auditing</span></li></ul></ul><li class="li1"><span class="s1">Summary</span></li><ul class="ul2"><li class="li1"><span class="s1">see slides</span></li></ul></ul><p class="p2"> </p><p class="p1"><span class="s1">have a look</span></p><ul class="ul1"><li class="li1"><span class="s1">HMAC</span></li><li class="li1"><span class="s1"><a href="http://ruggedsoftware.org" class="external-link" rel="nofollow">ruggedsoftware.org</a></span></li></ul><ul class="ul1"><li class="li1"><span class="s1"><a href="http://tinyurl.com/docker-security" class="external-link" rel="nofollow">tinyurl.com/docker-security</a></span></li><li class="li3"><span class="s2"><a href="http://kubernetes.io/" class="external-link" rel="nofollow">http://kubernetes.io</a></span></li></ul><p class="p2"> </p><p class="p1"><span class="s1">Thoughts:</span></p><ul class="ul1"><li class="li1"><span class="s1">oauth Service is a bottleneck</span><ul class="ul1"><li class="li1"><span class="s1">we should enable clients to check token by themselves</span></li></ul></li><li class="li1"><span class="s1">bei uns mal angehen:</span><ul class="ul1"><li class="li1"><span class="s1">Security should be part of the DOD</span></li><li class="li1"><span class="s1">run services of different security levels on different hosts</span></li></ul></li></ul><p class="p2"> </p><p class="p1"><span class="s1">ToDos</span></p><ul class="inline-task-list" data-inline-tasks-content-id="111411218">
+<li class="checked" data-inline-task-id="16"><span class="s1"><a class="confluence-userlink user-mention current-user-mention" data-username="" href="/display/~" data-linked-resource-id="3342617" data-linked-resource-version="2" data-linked-resource-type="userinfo" data-base-url="">Tim Steffens</a> Talk to PI Team (image scans, docker-security )</span></li>
+<li data-inline-task-id="19"><span class="s1"><a class="confluence-userlink user-mention current-user-mention" data-username="" href="/display/~" data-linked-resource-id="3342617" data-linked-resource-version="2" data-linked-resource-type="userinfo" data-base-url="">Tim Steffens</a> Talk to Peter (image scans, docker-security, rugged software, docker security Buch, ggf. Typ vom Talk als Berater)<br /></span></li>
+<li class="checked" data-inline-task-id="17"><span class="s1"><a class="confluence-userlink user-mention current-user-mention" data-username="" href="/display/~" data-linked-resource-id="3342617" data-linked-resource-version="2" data-linked-resource-type="userinfo" data-base-url="">Tim Steffens</a> Check for slides!</span></li>
+</ul>
+
+                    </div>
+
+
+
+                </div>             </div>
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Jul 12, 2017 15:00</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

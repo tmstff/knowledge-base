@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Improving Correctness with Types</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">root</a></span>
+                            </li>
+                                                    <li>
+                                
+                            </li>
+                                                    <li>
+                                <span><a href="2015-goto_111411202.html">2015 goto</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                             Improving Correctness with Types
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+    
+            Created by <span class='author'> Tim Steffens</span>, last modified on Jun 21, 2016
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p class="p1">Iain Hull</p><p class="p2"><a href="http://gotocon.com/berlin-2015/presentation/Improving%20Correctness%20with%20Types" class="external-link" rel="nofollow">http://gotocon.com/berlin-2015/presentation/Improving%20Correctness%20with%20Types</a></p><p class="p2">Slides: <a href="http://de.slideshare.net/IainHull/improving-correctness-with-type-goto-con-berlin" class="external-link" rel="nofollow">http://de.slideshare.net/IainHull/improving-correctness-with-type-goto-con-berlin</a></p><p class="p2">Video: <a href="https://www.youtube.com/watch?v=uxofKKIAY3Q" class="external-link" rel="nofollow">https://www.youtube.com/watch?v=uxofKKIAY3Q</a></p><p class="p2"><a href="mailto:iain.hull@workday.com" style="line-height: 1.42857;" class="external-link" rel="nofollow">iain.hull@workday.com</a> <a href="http://workday.github.com" style="line-height: 1.42857;" class="external-link" rel="nofollow">workday.github.com</a></p><p class="p2"> </p><ul class="ul1"><li class="li1"><span class="s1">Defensive Programming: not so nice for finding errors</span></li><li class="li1"><span class="s1">Fail Fast:</span></li><ul class="ul2"><li class="li1"><span class="s1">Find bugs quickly</span></li><li class="li1"><span class="s1">Requires lots of tests</span></li><li class="li1"><span class="s1">what happens when tests miss?</span></li><li class="li1"><span class="s1">errormessages not </span></li></ul><li class="li1"><span class="s1">Design by contract</span></li><ul class="ul2"><li class="li1"><span class="s1">invariants, pre- and post-conditions</span></li><li class="li1"><span class="s1">nobody seems to be interested</span></li><li class="li1"><span class="s1">toolsupport bad</span></li></ul><li class="li1"><span class="s1">Function: Abbildung von domain -&gt; Range</span></li><ul class="ul2"><li class="li1"><span class="s1">total function: complete domain, complete range</span></li><li class="li1"><span class="s1">shrink domain and range to get total functions</span></li><ul class="ul3"><li class="li1"><span class="s1">never use nulls (Hoare: billion dollar mistake)</span></li><li class="li1"><span class="s1">(almost) All data is immutable</span></li><ul class="ul3"><li class="li1"><span class="s1">great for correctness</span></li></ul><li class="li1"><span class="s1">do not throw exceptions</span></li><ul class="ul3"><li class="li1"><span class="s1">use error types instead</span></li></ul><li class="li1"><span class="s1">Use Wrapper types (to shrink domain and range)</span></li><ul class="ul3"><li class="li1"><span class="s1">example:</span></li><ul class="ul3"><li class="li1"><span class="s1">AnyVal =&gt; keyword: Value Type</span></li><li class="li1"><span class="s1">private constructor</span></li><li class="li1"><span class="s1">from method in companion object</span></li><li class="li1"><span class="s1">use ===  =&gt; type checked equals!</span></li><li class="li1"><span class="s1">define operators on Types</span></li><li class="li1"><span class="s1">=&gt; move validation to correct place</span></li><li class="li1"><span class="s1">=&gt; define semantic properties</span></li></ul><li class="li1"><span class="s1">non-empty list</span></li><ul class="ul3"><li class="li1"><span class="s1">org.scalactic</span></li><ul class="ul3"><li class="li1"><span class="s1">Every (non-empty list)</span></li></ul><li class="li1"><span class="s1">method call with vargars with first parameter fixed</span></li><li class="li1"><span class="s1">maybeNonEmpty</span></li></ul></ul><li class="li1"><span class="s1">Algebraic data types</span></li><ul class="ul3"><li class="li1"><span class="s1">sealed traits</span></li><li class="li1"><span class="s1">tag type</span></li><ul class="ul3"><li class="li1"><span class="s1">import tag.@@</span></li><li class="li1"><span class="s1">trait Foo</span></li><li class="li1"><span class="s1">function takes value tagged as @@ Foo</span></li></ul><li class="li1"><span class="s1">functional dependencies between types</span></li><ul class="ul3"><li class="li1"><span class="s1">use traits</span></li></ul><li class="li1"><span class="s1">expose shape of your data</span></li><li class="li1"><span class="s1">use shape to control possible states</span></li></ul><li class="li1"><span class="s1">Path-Dependent types</span></li><ul class="ul3"><li class="li1"><span class="s1">tied to the instance</span></li><li class="li1"><span class="s1">good for encryption, multi-tendancy</span></li></ul><li class="li1"><span class="s1">Amanda Launcher</span></li><ul class="ul3"><li class="li1"><span class="s1">Tests vs Types</span></li></ul><li class="li1"><span class="s1">&quot;The purpose of abstraction is not to be vague, but to create new semantic level in which one can be absolutely precise&quot; Dijkstra</span></li></ul></ul></ul>
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Jul 12, 2017 15:00</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 2015 goto</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">root</a></span>
+                            </li>
+                                                    <li>
+                                
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                             2015 goto
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+    
+            Created by <span class='author'> Tim Steffens</span>, last modified on Dec 07, 2015
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>Here are some of my learnings, inspirations and thoughts from the <a href="http://gotocon.com/berlin-2015/" class="external-link" rel="nofollow">Goto Conference 2015 Berlin</a> in Berlin:</p><h2 id="id-2015goto-/*&lt;![CDATA[*/div.rbtoc1499864438966{padding:0px;}div.rbtoc1499864438966ul{list-style:disc;margin-left:0px;}div.rbtoc1499864438966li{margin-left:0px;padding-left:0px;}/*]]&gt;*/Security#id-2015goto-SecurityArchitecture#id-2015goto-ArchitectureInfr"><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1499864438966 {padding: 0px;}
+div.rbtoc1499864438966 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1499864438966 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1499864438966'>
+<ul class='toc-indentation'>
+<li><a href='#id-2015goto-Security'>Security</a></li>
+<li><a href='#id-2015goto-Architecture'>Architecture</a></li>
+<li><a href='#id-2015goto-Infrastructure'>Infrastructure</a></li>
+<li><a href='#id-2015goto-Collaboration'>Collaboration</a></li>
+<li><a href='#id-2015goto-UX'>UX</a></li>
+<li><a href='#id-2015goto-Programming'>Programming</a></li>
+</ul>
+</div></h2><h2 id="id-2015goto-Security">Security</h2><p><a href="111411218.html">Microservices - a security Nightmare?</a></p><ul><li><strong>Microservices</strong> do not only introduce new vulnerabilities, they do also <strong>have a positive effect on security</strong><ul><li>breaches are limited</li><li>data is not shared,</li><li>CD of small services makes fixes very fast</li><li>&quot;Zoo&quot; of technologies limits exploits to certain services</li></ul></li><li class="li1"><span class="s1">Security should be part of the DOD, it must be &quot;baked into&quot; the software</span><ul><li class="li1"><span class="s1">SecOps needed!</span></li><li class="li1"><span class="s1">Sec Trainings needed</span></li></ul></li><li class="li1"><span class="s1">Security Tests should be part of CI</span></li><li class="li1"><span class="s1">There are security measures to secure docker</span><ul><li class="li1"><span class="s1">There's an ebook: <a href="https://gallery.mailchimp.com/979c70339150d05eec1531104/files/Docker_Security_Red_Hat.pdf" class="external-link" rel="nofollow">Docker Security</a></span></li><li class="li1">There are tools to scan images for vulnerabilities</li></ul></li><li class="li1"><span class="s1">You should run apps with different security levels on different hosts</span></li></ul><h2 id="id-2015goto-Architecture">Architecture</h2><p><a href="DDD-and-Microservices_111804452.html">DDD and Microservices</a></p><ul><li>Different services speak and understand possibly different languages</li><li>A service can conform the language of another service<ul><li class="li1"><span class="s1">&quot;If I conform to a mess - what does it make me?&quot; (this is also transitive ...)</span></li><li class="li1">To prevent close coupling, an Anti-Corruption layer can be applied</li></ul></li><li class="li1"><span class="s1">Not all of a large system will be well designed</span></li><li class="li1"><span class="s1">&quot;Models need to be clear, not big.&quot;</span><ul><li class="li1"><span class="s1">It's better to have multiple small models, instead of few big ones</span></li></ul></li><li class="li1"><span class="s1">Contexts (the setting that determines the meaning of a word) do not necessarily correspond to a single service - they might emerge from different services</span><span class="s1"><br /></span></li></ul><h2 id="id-2015goto-Infrastructure">Infrastructure</h2><p><a href="Consul_111804481.html">Consul</a></p><ul><li>Consul offers Service Discovery, Load Balancing, a Key-Value storage and some more stuff</li></ul><p><a href="Docker-Orchestration_111804503.html">Docker Orchestration</a></p><ul><li class="li1"><span class="s1">There are cool Docker Orchestration Tools: </span><span class="s1">Docker machine, </span><span class="s1">Docker compose, </span><span class="s1">Docker swarm, </span><span class="s1">Docker network</span></li><li class="li1"><span class="s1"><a href="https://www.digitalocean.com/" class="external-link" rel="nofollow">https://www.digitalocean.com/</a> can easily be used to host docker Test Setups</span></li><li class="li1"><span class="s1"><a href="https://mesosphere.com/" class="external-link" rel="nofollow">DCOS</a> and <a href="http://kubernetes.io/" class="external-link" rel="nofollow">Kubernetes</a> look interesting</span><ul><li class="li1"><span class="s1"><a href="http://gotocon.com/dl/goto-berlin-2015/slides/SergiuszUrbaniak_and_StefanSchimanski_KubernetesOnTopOfMesosOnTopOfDCOS.pdf" class="external-link" rel="nofollow">Slides of Kubernetes on Top of Mesos on Top of DCOS</a></span></li><li class="li1"><a href="https://mesosphere.com/amazon/" class="external-link" rel="nofollow">Run DCOS on AWS</a></li></ul></li></ul><h2 id="id-2015goto-Collaboration">Collaboration</h2><p><a href="How-to-Lead-your-Leaders_111411211.html">How to Lead your Leaders</a>:</p><ul><li>Understand that managers often do not understand you<ul><li>help them to understand, become a teacher</li><li>do it in private</li></ul></li><li>Assign work to your manager:<ul><li>give away management suitable tasks you can not really solve yourself</li><li class="li1"><span class="s1">everybody likes to feel useful, accomplishment is fun</span></li></ul></li><li>help your boss succeed<ul><li>success leads to more trust and freedom</li><li class="li1"><span class="s1">&quot;Its amazing what you can accomplish, when nobody care who takes the credit&quot; =&gt; let the manager get the credit</span></li><li class="li1"><span class="s1">keep up a good communication</span></li></ul></li><li class="li1"><span class="s1">think different<br /></span><ul><li class="li1"><span class="s1">have empathy for people that need to adopt a new way of thinking</span></li><li class="li1"><span class="s1">help others by sharing your &quot;light-bulb&quot; moments in form of questions</span><ul><li class="li1"><span class="s1">e.g. &quot;In which way is ... helping us, to reach our goal?&quot;</span></li></ul></li></ul></li></ul><h2 id="id-2015goto-UX">UX</h2><p><a href="111804679.html">You don't always get what you want</a></p><ul><li class="li1"><span class="s1">always test your designs</span><ul><li class="li1"><span class="s1"><span class="s1">every nice design done in theory will fail in front of users</span></span></li><li class="li1"><span class="s1">make videos of people using your software</span></li><li class="li1"><span class="s1">validate design choices early</span></li></ul></li><li class="li1"><span class="s1">if you want people to read something, make it short!</span></li><li class="li1"><span class="s1">designing a clear UI exposes business logic flaws</span></li><li class="li1"><span class="s1">allow graceful recovery from mistakes</span><ul><li class="li1"><span class="s1">make short pages of longer forms</span></li></ul></li><li class="li1"><span class="s1">make people feel uncomfortable, until users do not </span></li></ul><h2 id="id-2015goto-Programming">Programming</h2><p><a href="Improving-Correctness-with-Types_111411205.html">Improving Correctness with Types</a>:</p><ul><li>Defensive programming creates a lot of boilerplate code, hides errors and makes code more difficult to understand</li><li>Use side-effect free functions with immutable data structures</li><li>Use total functions (instead of partial functions)</li><li>Shrink domain and range of a function as much as possible<ul><li>e.g. <ul><li>Wrapper types in Scala (allows to reduce the possible values for a String)</li><li>non-empty lists</li><li>sealed traits</li></ul></li><li>reduces the amount of test cases needed, because the compiler ensures only valid values are passed to a function call</li></ul></li><li class="li1"><span class="s1">&quot;The purpose of abstraction is not to be vague, but to create new semantic level in which one can be absolutely precise&quot; Dijkstra</span></li></ul><p class="li1"><span class="s1"><a href="111804644.html">Paradigm: Functional Programming</a></span></p><ul><li class="li1"><span class="s1">both functional programming and OO programming have their pros and cons - be open to both and profit from the advantages out of both worlds</span></li><li class="li1"><span class="s1">Good learning portal for Clojure: <a href="https://www.4clojure.com/" class="external-link" rel="nofollow">https://www.4clojure.com/</a></span></li></ul><p class="li1"><a href="Lambdas-all-the-way-down_111804650.html">Lambdas all the way down</a></p><ul><li class="li1">Otto uses <a href="http://spark.apache.org/" class="external-link" rel="nofollow">spark</a>, <a href="https://en.wikipedia.org/wiki/Apache_Hadoop#Hadoop_distributed_file_system" class="external-link" rel="nofollow">HDFS</a>, python &amp; clojure for some parts of their software (e.g. recommendations)</li><li class="li1">spark is used to distribute function calls on multiple nodes</li><li class="li1">an immutable file system is a good fit for batch-processing</li><li class="li1">core.async is a cool clojure library that provides async channels </li><li class="li1">In the experience of Christian Stamm, Clojure development is much faster (among others because of missing type system)</li></ul><p class="li1"><a href="111804672.html">Thinking in a Highly Concurrent, Mostly-functional Languare</a></p><ul><li class="li1"><span class="s1">Whatsapp backend is written in erlang :-)</span></li><li class="li1">It is much easier and less error prone to handle immutable state in a concurrent environment</li><li class="li1">Erlangs concurrency model is interesting (see talk notes)</li></ul><p> </p><p> </p>
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Jul 12, 2017 15:00</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

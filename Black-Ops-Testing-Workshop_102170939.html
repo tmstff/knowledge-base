@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Black Ops Testing Workshop</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">root</a></span>
+                            </li>
+                                                    <li>
+                                
+                            </li>
+                                                    <li>
+                                <span><a href="2015-Agile-Testing-Days_102170862.html">2015 Agile Testing Days</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                             Black Ops Testing Workshop
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+    
+            Created by <span class='author'> Tim Steffens</span>, last modified on Nov 13, 2015
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><strong>Workshop description</strong>: <a href="http://www.agiletestingdays.com/session/black-ops-testing/" class="external-link" rel="nofollow">http://www.agiletestingdays.com/session/black-ops-testing/</a></p><p><strong>Idea</strong>: Test an actual application with help of experienced instructors to learn new tools and techniques</p><p><strong>Slides</strong>: in <a href="https://docs.google.com/presentation/d/15ABb4XuXIqCsi9JSlkGQ5PY-AcWaUliuqfk0yyhrwBM" class="external-link" rel="nofollow">google drive</a></p><p><strong>Application under Test</strong>: <a href="http://www.getontracks.org/" class="external-link" rel="nofollow">http://www.getontracks.org/</a> - a tool to help with <a href="http://wikipedia.org/wiki/Getting_Things_Done" class="external-link" rel="nofollow">Getting Things Done</a>. (available via <a href="https://bitnami.com/stack/tracks" class="external-link" rel="nofollow">bitnami</a> and <a href="https://github.com/TracksApp/tracks" class="external-link" rel="nofollow">github</a> - or these here might still work: <a href="http://tpl1.com/atd.htm" class="external-link" rel="nofollow">http://tpl1.com/atd.htm</a> ) </p><p><strong>Key Learnings</strong>:</p><ul><li><em>Exploratory testing is necessary</em><ul><li>Even if you have a high coverage by automated (ui) tests, there still can be a lot of bugs not revealed that way</li></ul></li><li><em>Exploratory testing seems to be faster than &quot;traditional&quot; approaches</em> (creating test plans, matrixes, equivalence classes etc.)</li><li><em>Efficiency &amp; inspect and adept are key aspects of exploratory testing</em><ul><li>In an agile world you do not have much time to test your software</li><li>inefficient testing means wasting time, which means missing bugs</li><li>Reflect on your actions on a regular basis and see what you can improve (e.g. make screen recordings and see how much time you spend for what) </li></ul></li><li><em>Pair testing might show to be very useful</em><ul><li>Testing approaches seem to vary even more than programming approaches - this might be a good opportunity for learning from others</li></ul></li><li><em><a href="https://de.wikipedia.org/wiki/Mind-Map" class="external-link" rel="nofollow">Mindmaps</a></em><em> are useful to record test ideas for a test session</em></li><li><em>interesting test aspects / starting points:</em><ul><li>Date, Time &amp; Time Zone<ul><li>challenge: How to (manually) test time based operations / events?<ul><li>possible solution: modify system / database time</li></ul></li><li>Date borders and crossing them by changing time zones</li></ul></li><li>Internationalization (which is often not tested well)</li><li>Security: Injections ( <a href="https://de.wikipedia.org/wiki/SQL-Injection" class="external-link" rel="nofollow">SQL-Injection</a> , <a href="https://de.wikipedia.org/wiki/Cross-Site-Scripting" class="external-link" rel="nofollow">XSS</a> )</li><li>Old Bugs</li><li>Known unstable areas</li><li>Specifics of libraries and technologies employed<ul><li>eg. Race conditions in AJAX</li></ul></li><li>encoding</li></ul></li><li><em>cucumber tests written by somebody else are NOT easy to understand, in case you want to know what's going on on a technical level</em></li></ul><p><strong>Techniques</strong>:</p><ul><li>Six Questions:<ul><li>What? Why? When? How? Where? Who?</li></ul></li><li><a href="https://en.wikipedia.org/wiki/Intelligence_cycle" class="external-link" rel="nofollow">Intelligence Cycle</a> (military style)</li><li>Talk - Think - Talk Cycle</li><li>Observe Data<ul><li>Database</li><li>Cookies</li><li>Logs</li><li>Network traffic</li><li>Queues</li></ul></li><li>Different approaches:<ul><li>explore existing functionality vs. test expectations</li></ul></li><li>Do sessions around topics<ul><li>which could be technical, functional, bug-related ...</li></ul></li><li>Identify test-impediments and find solutions<ul><li>e.g. Google Calendar integration can not be properly tested, because robots.txt is not configured properly</li></ul></li></ul><p><strong>Tools</strong>:</p><ul><li><em>a <a href="https://de.wikipedia.org/wiki/Ruby_on_Rails" class="external-link" rel="nofollow">ruby on rails</a> app uses</em><ul><li><em><a href="https://www.ruby-lang.org/de/" class="external-link" rel="nofollow">ruby</a> (language interpreter),</em></li><li><em><a href="https://de.wikipedia.org/wiki/RubyGems" class="external-link" rel="nofollow">gem</a> (package management),</em></li><li><em><a href="http://rake.rubyforge.org/" class="external-link" rel="nofollow">rake</a> (make for ruby) and</em></li><li><em><a href="http://bundler.io/" class="external-link" rel="nofollow">bundler</a> (<em>package management, probably cooler than gem <img class="emoticon emoticon-wink" src="images/icons/emoticons/wink.png" data-emoticon-name="wink" alt="(wink)"/> </em>)</em></li></ul></li><li><em>testing tools</em><ul><li><em><a href="https://addons.mozilla.org/de/firefox/addon/firebug/" class="external-link" rel="nofollow">Firebug</a> (Firefox)</em></li><li><em><a href="http://www.telerik.com/fiddler" class="external-link" rel="nofollow">Fiddler</a></em></li><li><em><a href="http://jmeter.apache.org/" class="external-link" rel="nofollow">JMeter</a></em></li><li><em><a href="https://portswigger.net/burp/" class="external-link" rel="nofollow">Burpsuite</a></em></li><li><em><a href="https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg?hl=de" class="external-link" rel="nofollow">EditThisCookie</a> (Chrome)</em></li><li><em><a href="https://addons.mozilla.org/de/firefox/addon/cookie-manager/" class="external-link" rel="nofollow">CookieManager</a><em> (Firefox)</em></em></li><li><em>Devtools (from browser)</em></li><li><em>Silenium Webdriver</em></li><li><em>GEB</em></li><li><em><a href="https://cucumber.io/" class="external-link" rel="nofollow">cucumber</a></em></li><li><em><a href="http://nshipster.com/network-link-conditioner/" class="external-link" rel="nofollow">NetworkLink Conditioner</a></em></li><li><em>Tail / Grep</em></li><li><em>curl / <a href="https://github.com/jkbrzt/httpie" class="external-link" rel="nofollow">HTTPie</a></em></li><li><em><a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop" class="external-link" rel="nofollow">Postman</a> (Chrome, supports http call record &amp; playback!)</em></li><li><em><a href="https://chrome.google.com/webstore/detail/bug-magnet/efhedldbjahpgjcneebmbolkalbhckfi" class="external-link" rel="nofollow">Bugmagnet</a></em></li><li><em>Mindmap</em><ul><li><em><a href="https://www.mindmup.com/" class="external-link" rel="nofollow">mindmup</a></em></li><li><em><a href="https://www.xmind.net/de/" class="external-link" rel="nofollow">xmind</a></em></li></ul></li><li><em><a href="http://www.charlesproxy.com/" class="external-link" rel="nofollow">Charles</a></em></li><li><em><a href="https://www.wireshark.org/" class="external-link" rel="nofollow">wireshark</a></em></li><li><a href="https://www.literatureandlatte.com/scrivener.php" class="external-link" rel="nofollow">scrivener</a> (note taking)</li></ul></li><li>Infrastructure<br /><ul><li><a href="https://bitnami.com/" class="external-link" rel="nofollow">bitnami</a> (Cloud environment similar to heroku)</li></ul></li></ul><p><strong>Further Thoughts</strong>:</p><ul><li>How do we employ exploratory testing in our teams?</li></ul><p> </p><p> </p>
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Jul 12, 2017 15:00</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>
