@@ -29,9 +29,21 @@
 read server file via XML entities at XML file uploads
 
 
-## burp headless
+## burp
+
+### headless
 
     java -Xmx3000m -Djava.awt.headless=true -jar "/Applications/Burp Suite Professional.app/Contents/java/app/burpsuite_pro.jar" --config-file=burp-project-options.json
+
+### infiltrator & scanner
+
+Burp Infiltrator is a tool for instrumenting target web applications in order to facilitate testing using Burp Scanner. Burp Infiltrator modifies the target application so that Burp can detect cases where its input is passed to potentially unsafe APIs on the server side.
+
+    java -jar burp_infiltrator_java.jar
+
+### collaborator
+
+Burp Collaborator is an external service that Burp can use to help discover many kinds of vulnerabilities.
 
 ## arachni
 
