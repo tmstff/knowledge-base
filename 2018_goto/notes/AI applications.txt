@@ -1,0 +1,7 @@
+Big data is foundation of AI
+
+word2Vec
+
+LSTM
+
+DVC

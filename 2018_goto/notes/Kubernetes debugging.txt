@@ -1,0 +1,19 @@
+Namespace ~ Environment
+kubectl get ns
+kubectl get pods -n abcd
+Unterschiede, zb DB secrets: in config map
+
+Logs durchsuchen: BigQuery
+
+kubectl proxy
+kubectl exec ...
+kubectl port-forward ...
+
+weave-scope
+
+Stackdriver Trace
+Stackdriver Debug
+
+Debugger: snapshot
+
+Tracing: open senses, zipkin

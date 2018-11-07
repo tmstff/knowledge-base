@@ -1,0 +1,19 @@
+Package Managements for Kubernetes
+
+?how to prevent accidental deployments to prod?
+
+Helm har kubenetes setups für alles mögliche :-) (chart repositories) -> für Workshop nutzen?
+
+Tiller deamon wird in Cluster installiert
+
+
+helm install ...
+helm update ...
+helm history ...
+helm rollback ...
+-f "values.prod.yml"
+--set ...=....
+--set-file
+--dry-run --debug
+helm create --starter
+helm test

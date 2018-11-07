@@ -1,0 +1,44 @@
+Sam Newman - Building Microservices
+
+Single worst problem: Weak or stolen passwords
+  Check for breached passwords
+
+Pheonix Infrastructure Pattern
+
+Aws gefährlich!
+
+Rotate secret
+
+Consul-vault
+
+44% of all vulnerabilities had been identified earlier
+
+CVE Database
+
+Kubernetes &  IAAS: patchen wird einem abgenommen!
+
+Claire
+Aquasec.com
+Snyk.io
+
+Https everywhere
+
+Let's encrypt CA
+
+Mutual TLS Certificate
+  Azure
+
+Confused Deputy Problem
+
+JWT token -> only internal
+
+Service Mesh: Istio
+
+Recap:
+  Paching &passwords
+  Storing secrets
+  Transportation security
+  Authorization
+
+
+Slides on website

@@ -1,0 +1,22 @@
+Avoid host afinity
+
+Consul, eureka, zookeeper
+SAM
+
+Struktur unklar, keine klare Abgrenzung der Themen
+Top-Level view fehlt, viele vollkommen willkürlich wirkende Details ...
+Warum das ganze? Welche >Anwendungsfall<? Wozu hilft das?
+Begriffe nicht erklärt
+Wozu sind die Produkte da?
+Werbeveranstaltung
+Total überfrachtet
+ => einfache Diagramme
+Langweilig, >keine Demos<
+Zu viel Text, zu wenig Diagramme
+
+
+AWS
+Komplexe, eigene Welt
+Will man sich das antun?
+Spart einem das Arbeit?
+Vendor lock

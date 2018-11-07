@@ -1,0 +1,8 @@
+Chad Fowler Buch
+
+Kubernetes in the wild talk schauen
+
+Talks für tarent verfügbar machen, besonders gute Talks raussuchen
+
+Go CD anschauen
+

@@ -1,0 +1,29 @@
+Understand busines case
+
+Use business monitoring
+- all business decisions are made in the gut
+- pretend to adress the brain, but aim for the gut
+- "Its strange for developers, but it's the way managers work"
+
+Deal with unavailability
+Think about when a problem occurs
+
+Feedback cycle devops -> workshop
+
+Site Reliability Engineering (STE)
+
+Availability goes down with the number of services involved in a request
+
+Everything we learned about reuse is good inside boundaries, but outside these it makes systems instable
+
+=> get the functional design right
+
+Mitigate
+
+Patterns are options, not obligations
+Robust must be easy
+
+Use wisdom from earlier
+
+
+

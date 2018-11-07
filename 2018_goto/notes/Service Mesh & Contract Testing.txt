@@ -1,0 +1,10 @@
+Servicemash: linkerd version 1
+
+registrator gliderlabs => put docker containers into consul
+
+Pact broker
+
+Pact can check swagger api
+swagger-pact-validator
+
+Generate Tests from swagger API

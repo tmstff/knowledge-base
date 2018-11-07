@@ -1,0 +1,16 @@
+Google Cloud Cheat Sheet
+
+Google Cloud Big Query
+
+Internet archive
+GH archive
+
+Auto ML - add personalization
+
+Doc2vec
+
+Cloud Scheduler
+
+Google Collaboratory
+
+Google reserve image search
