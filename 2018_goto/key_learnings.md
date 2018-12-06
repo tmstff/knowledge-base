@@ -1,4 +1,9 @@
 * Generell
+    * YoutTube Channel
+        * https://www.youtube.com/channel/UCs_tLP3AiwYKwdUHpltJPuA
+        * Z.B: Martin Fowler Talks:
+            * https://www.youtube.com/results?search_query=fowler+goto
+            * https://www.youtube.com/watch?v=4E3xfR6IBII
     * Goto Play App (Videos abspielen)
         * [Android](https://play.google.com/store/apps/details?id=com.gotoplay)
         * [IOS](https://itunes.apple.com/us/app/goto-play/id1216616835)
@@ -33,6 +38,11 @@
     * https://bcalmbcorp.com/
     * Why does the company exist?
     * Sustainability rating
+* Energy and Education Access for Remote Communities
+    * https://gotober.com/2018/sessions/539
+    * https://www.weforum.org/agenda/authors/jaideep-bansal/
+    * Expiditionen: http://ghe.co.in/
+    * https://www.youtube.com/watch?v=AwS42muvKQ0&index=3&list=PLEx5khR4g7PJquVHXtkcdo-QzK54bfmY9
 * Insecure Transit - Microservice
     * Single worst problem: Weak or stolen passwords
     * [HOW DO  BREACHES  OCCUR?](http://www.verizonenterprise.com/verizon-insights-lab/dbir/2017/)
@@ -43,7 +53,7 @@
         * Kubernetes &  IAAS: patchen wird einem abgenommen!
         * Check container: https://github.com/coreos/clair
         * Find outdated dependencies: https://snyk.io/
-    * https://www.oreilly.com/library/view/securing-microservices-protect/9781492038986/video319373.html
+    * https://www.youtube.com/watch?v=1sjqHlLuRw8&list=PLEx5khR4g7PIEfXSB9bDS4lB-J9stOynD&index=2
 * Swearing, Nudity and Other Vulnerable Positions
     * Psychological safety: belief that one will not be punished or humiliated for speaking up with ideas, questions, concern or mistakes
     * "Psychological safety was far and away the most important of the five dynamics we found"
@@ -56,6 +66,7 @@
         * Yes, and ...  instead of "yes, but"
             * -> go with the idea, improvise, leave room for creativity
         * Are you OK? -> replace judgent with curiosity
+    * https://www.youtube.com/watch?v=ofBv-num0lA&index=4&list=PLEx5khR4g7PJquVHXtkcdo-QzK54bfmY9
 * Event-based Architecture and Implementations with Kafka and Atom
     * Async events possible via Atom feeds
 * The Leprechauns of Software Engineering

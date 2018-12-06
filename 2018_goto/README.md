@@ -175,6 +175,7 @@ Tracing: open senses, zipkin
 * https://gotober.com/2018/sessions/539
 * https://www.weforum.org/agenda/authors/jaideep-bansal/
 * Expiditionen: http://ghe.co.in/
+* https://www.youtube.com/watch?v=AwS42muvKQ0&index=3&list=PLEx5khR4g7PJquVHXtkcdo-QzK54bfmY9
 
 ![](images/IMG_20181031_180838.jpg)
 
@@ -197,6 +198,7 @@ Tracing: open senses, zipkin
 * https://samnewman.io
 * slides: https://www.dropbox.com/s/fl8mojfoi1fzjg3/InsecureTransit.pdf?dl=0
 * https://samnewman.io/offerings/videos/
+* https://www.youtube.com/watch?v=1sjqHlLuRw8&list=PLEx5khR4g7PIEfXSB9bDS4lB-J9stOynD&index=2
 
 ### content
 ![](images/IMG_20181101_110428.jpg)
@@ -240,7 +242,7 @@ Tracing: open senses, zipkin
 * https://www.wisenoodles.com/talks/swearing-nudity-and-other-vulnerable-positions
 * https://twitter.com/antz29
 * https://www.wisenoodles.com/
-* Video
+* https://www.youtube.com/watch?v=ofBv-num0lA&index=4&list=PLEx5khR4g7PJquVHXtkcdo-QzK54bfmY9
 
 ### cotent
 
@@ -285,6 +287,7 @@ Are you OK? -> replace judgent with curiosity
 * [>slides<](https://files.gotocon.com/uploads/slides/conference_12/662/original/Erwin%20de%20Gier%20Kubernetes%20Helm.pdf)
 * https://twitter.com/erwinde
 * https://github.com/erwindeg
+* https://www.youtube.com/watch?v=TXZBuBQpm-Q
 
 ### content
 * https://www.helm.sh/
