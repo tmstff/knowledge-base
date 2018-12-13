@@ -164,6 +164,7 @@ Tracing: open senses, zipkin
 
 
 ## How Software can be Thought of as a Force for Good
+* Francesco Mondora
 * https://gotober.com/2018/sessions/654
 * https://twitter.com/makkina
 * Why does the company exist?
@@ -237,7 +238,7 @@ Tracing: open senses, zipkin
 
 ## Swearing, Nudity and Other Vulnerable Positions
 ### metadata
-* John Le Drew
+* John Le Drew 
 * https://gotober.com/2018/sessions/497
 * https://www.wisenoodles.com/talks/swearing-nudity-and-other-vulnerable-positions
 * https://twitter.com/antz29

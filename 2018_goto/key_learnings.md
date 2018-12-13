@@ -66,6 +66,10 @@
         * Yes, and ...  instead of "yes, but"
             * -> go with the idea, improvise, leave room for creativity
         * Are you OK? -> replace judgent with curiosity
+    * Links:
+        * https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html
+        * https://rework.withgoogle.com/blog/five-keys-to-a-successful-google-team/
+        * https://rework.withgoogle.com/guides/understanding-team-effectiveness/steps/foster-psychological-safety/
     * https://www.youtube.com/watch?v=ofBv-num0lA&index=4&list=PLEx5khR4g7PJquVHXtkcdo-QzK54bfmY9
 * Event-based Architecture and Implementations with Kafka and Atom
     * Async events possible via Atom feeds
