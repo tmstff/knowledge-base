@@ -1,8 +1,7 @@
 # Devopscon 2019
 
-## Silos are dead. Long live Silos
+## Jeff Sussna: Silos are dead. Long live Silos
 
-* Jeff Sussna
 * https://twitter.com/jeffsussna / @jeffsussna
 * https://devopsconference.de/business-company-culture/silos-are-dead-long-live-silos/
 
@@ -26,3 +25,36 @@
         * Promise-Driven Design
         * are we making the right promises? Which? Do we keep them?
 * Book Jeff Sussna - Designing Delivery 
+
+## Basil Faruqui: In Kubernetes, has everyone forgotten application workflows?
+
+* https://devopsconference.de/docker-kubernetes/in-kubernetes-has-everyone-forgotten-application-workflows/
+
+![](images/IMG_20190612_100405.jpg)
+
+* Werbeveranstaltung mit wenig Informationsgehalt, Sprecher meiden :-D
+
+## Roland Huss: Shell Ninja: Mastering the Art of Shell Scripting #slideless
+
+* https://twitter.com/ro14nd
+* https://ro14nd.de/
+* https://devopsconference.de/docker-kubernetes/shell-ninja-mastering-the-art-of-shell-scripting/
+* https://github.com/ro14nd-talks/shell-ninja
+
+![](images/IMG_20190612_114952.jpg)
+
+* shell is everywhere
+* maybe least common denominator
+* fast turnaround
+* history
+    * 1971 first shell Ken Thomson
+    * 1979 Bourne shell by stephen bourne
+    * 1979 c-shell
+    * 1989 bash brian fox
+* Blue green deployment with kubernetes and shell
+* `set -eu` # fail on error, fail on undeclared variable - use set +e to disable for commands intendet to possibly fail
+* `set -o pipefail` # break pipeline if any and fails
+* `ARGS=("$@")` # store command line call
+* bash getopts
+* Functions können bloß ints zurück liefern, daher werte (zb true/false) ausgeben und eveluaten (letzteres ist mittlerweile scheinbar optional)
+* Testing: bats - bash automated testing system
