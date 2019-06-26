@@ -4,3 +4,4 @@
 - [scala](scala/)
 - [2017 security workshop](2017_security_workshop/)
 - [2018 goto Berlin](2018_goto)
+- [2019 devops conference Berlin](2019_devopscon)
