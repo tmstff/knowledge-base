@@ -124,8 +124,7 @@
 * cvedetails.com
 * Exploit-db.com
 * ZAP headless with attack mode and selenium (don't forget to limit to specific URL pattern)
-
--Christian: jenkinsfile
+* [Jenkinsfile_christian_schneider](Jenkinsfile_christian_schneider)
 
 
 ## Gunner Winkenwerder: The path to agile DevSecOps – a holistic approach of automation, orchestration and correlation
