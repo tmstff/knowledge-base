@@ -6,3 +6,4 @@
 - [2018 goto Berlin](2018_goto/README.md)
 - [2019 devops conference Berlin](2019_devopscon/README.md)
 - [2019 BedCon Berlin](2019_bedcon/README.md)
+- [2019 TaCon Leipzig](2019_tacon/README.md)
