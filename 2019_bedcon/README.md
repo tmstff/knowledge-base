@@ -77,9 +77,10 @@ Der Vortrag identifiziert oft beobachte Phänomene in unstrukturierten Monolithe
 * @ModuleTest
 * Methodenaufrufe durch Events ersetzen
 * See also 
-    * https://jqassistant.org/ & https://vimeo.com/170797227 
-    * https://www.hello2morrow.com/products/sonargraph/
-    * https://github.com/clarkware/jdepend
+    * https://jqassistant.org/ & https://vimeo.com/170797227 query Java programm structure in Neo4j
+    * https://www.hello2morrow.com/products/sonargraph/ analyse Java, C#, C++, Python programm structure ($$$)
+    * https://github.com/clarkware/jdepend measure Java programm design
+    * > https://www.archunit.org - test Java architecture asserstions
 
 ## Ktor - asynchrones Kotlin Web Framework
 

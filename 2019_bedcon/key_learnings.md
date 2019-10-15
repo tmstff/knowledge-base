@@ -15,6 +15,15 @@
     * z.B.: `promtool config check`
 * amtool: für alert manager
 
+## Bessere Monolithen – modulithische Applikationen mit Spring Boot
+
+* Es gibt einige Tools zur Analyse der Struktur eines Porgramms
+    * https://jqassistant.org/ & https://vimeo.com/170797227 query Java programm structure in Neo4j
+    * https://www.hello2morrow.com/products/sonargraph/ analyse Java, C#, C++, Python programm structure ($$$)
+    * https://github.com/clarkware/jdepend measure Java programm design
+    * > https://www.archunit.org - test Java architecture asserstions
+    * https://github.com/odrotbohm/moduliths - module und Abhängigkeiten definieren
+
 ## Ktor - asynchrones Kotlin Web Framework
 
 * https://ktor.io/ / https://github.com/ktorio/ktor / https://github.com/ktorio/ktor-samples
