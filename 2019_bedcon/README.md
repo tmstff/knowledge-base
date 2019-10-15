@@ -117,7 +117,7 @@ In this talk, we will demonstrate the usage of the codebuff project and how it c
 * Readability
 * Judge correctness quickly
 * Spaces, indentation, alignement
-* Xtext: DSL definition
+* [Xtext](https://www.eclipse.org/Xtext/): DSL definition
 * CodeBuff: codestyle by example, using ML
 
 

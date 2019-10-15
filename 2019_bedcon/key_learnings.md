@@ -39,6 +39,8 @@
     * Typsichere Html templates
 * Example:
     * https://github.com/mdoh/ktor-highscore-example
+* off-topic:
+    * idea hat einen coolen http-client!
 
 ## Carving Microservices out of the Monolith with Domain Storytelling
 
