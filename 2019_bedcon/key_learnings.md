@@ -25,6 +25,8 @@
     * ContentNegotiation / gson()
     * ... etc, siehe Feature Liste
     * Typsichere Html templates
+* Example:
+    * https://github.com/mdoh/ktor-highscore-example
 
 ## Carving Microservices out of the Monolith with Domain Storytelling
 
@@ -44,6 +46,7 @@
     * [Too big to be understood as a whole](https://speakerdeck.com/hschwentner/domain-storytelling?slide=102)
     * [Different models for different purposes](https://speakerdeck.com/hschwentner/domain-storytelling?slide=108)
 * Tools: whiteboard, https://github.com/WPS/domain-story-modeler
+* https://domainstorytelling.org/
 
 ## Testcontainers - Integrationstesten mit Docker leicht gemacht
 * Für Logs von Containern muss LOGGER explizit übergeben werden
