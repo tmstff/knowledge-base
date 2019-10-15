@@ -76,6 +76,10 @@ Der Vortrag identifiziert oft beobachte Phänomene in unstrukturierten Monolithe
 * SpringBootApplication in package
 * @ModuleTest
 * Methodenaufrufe durch Events ersetzen
+* See also 
+    * https://jqassistant.org/ & https://vimeo.com/170797227 
+    * https://www.hello2morrow.com/products/sonargraph/
+    * https://github.com/clarkware/jdepend
 
 ## Ktor - asynchrones Kotlin Web Framework
 
