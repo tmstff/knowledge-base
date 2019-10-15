@@ -11,6 +11,9 @@
     * wie kommt das ins System? => z.B. eigener Service
 * ErrorRate && errorCount einbeziehen => stabiler!
 * Prometheus: Yamls in repo (bei Anwendung!!!) werden beim Deployment ausgerollt (Datei an richtige Stelle legen)
+* promtool: validierung regeln, endpoints + [Unit Tests](https://prometheus.io/docs/prometheus/latest/configuration/unit_testing_rules/)
+    * z.B.: `promtool config check`
+* amtool: für alert manager
 
 ## Ktor - asynchrones Kotlin Web Framework
 

@@ -37,8 +37,9 @@
 * Yamls in repo (bei Anwendung!!!) werden beim Deployment ausgerollt (Datei an richtige Stelle legen)
 * ![](fotos/IMG_0048.JPG)
 * OpsGenie: Kalender, Eskalationskette
-* Prometheus tooling: validierung regeln, endpoints + Unit Tests
-* Was ist mit 0-Linien Checks? S.o.
+* promtool: validierung regeln, endpoints + [Unit Tests](https://prometheus.io/docs/prometheus/latest/configuration/unit_testing_rules/)
+    * z.B.: `promtool config check`
+* amtool: für alert manager
 
 
 ## Rise and Fall of Single-Page-Monoliths – Micro-Frontends und deren Integration
