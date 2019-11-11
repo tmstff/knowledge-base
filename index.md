@@ -1,8 +1,5 @@
 # Tim's Knowledge base
 
-## To be migrated
-- [stuff not yet in Markdown](non-md/index.html)
-
 ## Workshops
 - [2017 security workshop](workshops/2017_security_workshop/README.md)
 
