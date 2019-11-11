@@ -12,7 +12,7 @@
 - [2019 BedCon Berlin](conferences/2019_bedcon/README.md)
 - [2019 TaCon Leipzig](conferences/2019_tacon/README.md)
 
-
 ## Misc
 - [scala](misc/scala/index.md)
 - [feature_branch_tests_stash_jenkins](misc/feature_branch_tests_stash_jenkins.md)
+- [talks](misc/talks.md)
