@@ -9,7 +9,7 @@
     * talk to all people involved
     * distribute skills & knowledge (&access right)
     * be (with) the customer
-* important metric: business forecast vs. cusiness outcome!
+* important metric: business forecast vs. business outcome!
 * democratize data
     * default: open
 * minimize MTTR
