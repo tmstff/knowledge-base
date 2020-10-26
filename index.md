@@ -2,6 +2,7 @@
 
 ## Workshops
 - [2017 security workshop](workshops/2017_security_workshop/README.md)
+- [2020 Rhetorik Workshop](workshops/2020_rhetorik/README.md)
 
 ## Conferences
 - [2014 goto Berlin](non-md/2014-goto_6259692.html)
@@ -12,6 +13,7 @@
 - [2019 devops conference Berlin](conferences/2019_devopscon/README.md)
 - [2019 BedCon Berlin](conferences/2019_bedcon/README.md)
 - [2019 TaCon Leipzig](conferences/2019_tacon/README.md)
+- [2019 It Tage Frankfurt](conferences/2019_it-tage/README.md)
 
 ## Misc
 - [scala](misc/scala/index.md)
