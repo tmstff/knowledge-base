@@ -136,7 +136,7 @@ SAML Standard (Active directory) https://de.wikipedia.org/wiki/Security_Assertio
 
 * Access Management: Login:
     * usname / password
-    * IAM for MySQL & Postgres
+    * IAM for MySQL, Postgres Aurora
 
 #### Aurora
 
@@ -149,4 +149,22 @@ SAML Standard (Active directory) https://de.wikipedia.org/wiki/Security_Assertio
 * requirements:
     * writes: 4 / 6
     * reads: 3 / 6
+* enpoints
+    * writer
+    * reader
+        * connection LB
+* Aurora
+    * Serverless
+    * Cross Region (?)
+    * Global
+* select global reader / writer endpoint for access
+
+#### AWS ElastiCache
+
+* Redis
+* memcached
+* write / read scaling
+* multi-AZ
+
+
 
