@@ -16,3 +16,9 @@
 * devops: mind state - not technology
 * "Ego is force field for learning"
     * NOT assuming you already know everything is key!
+
+## Mehr Sicherheit für Anwendungen mit KUBERNETES Bordmitteln – Good practices for K8s AppOps Security
+
+* Johannes Schnatterer
+* [https://www.youtube.com/watch?v=YlvdFE1RsmI](https://www.youtube.com/watch?v=YlvdFE1RsmI)
+* [Slides](https://cloudogu.github.io/k8s-appops-security-talks/2020-03-18-javaLand/#/)
