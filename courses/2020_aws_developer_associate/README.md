@@ -17,9 +17,9 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
 
 ### IAM
 
-user - group - role (machine)
-
-SAML Standard (Active directory) https://de.wikipedia.org/wiki/Security_Assertion_Markup_Language
+* user - group - role (machine)
+* SAML Standard (Active directory) https://de.wikipedia.org/wiki/Security_Assertion_Markup_Language
+* Security Group: Region Scoped
 
 ### EC2
 
@@ -133,6 +133,7 @@ SAML Standard (Active directory) https://de.wikipedia.org/wiki/Security_Assertio
         * create Snapshot
         * copy & encrypt snapshot
         * restore to new encrypted DB from encrypted snapshot
+    * Postgres does not provide TDE
 
 * Access Management: Login:
     * usname / password
@@ -165,6 +166,27 @@ SAML Standard (Active directory) https://de.wikipedia.org/wiki/Security_Assertio
 * memcached
 * write / read scaling
 * multi-AZ
+* caching Pattern
+    * Lazy Loading / Cache-Aside / Lazy Population
 
+### Route 53
 
+* A: hostname => IPv4
+* AAAA: hostname => IPv6
+* CNAME: hostname to hostname
+* Alias: hostname to AWS resource
+* nslookup / dig
+* TTL: konfigurierbar in Route53
+
+* Routing Policies:
+    * simple
+    * weighted
+    * latency
+    * Failover
+    * Geo Location
+* health checks
+    * unhealthy after X checks failed (default 3)
+    * heathy after X checks apssed (default 3)
+    * Default Interval 30s (up to 10s for more $)
+    * ~15 health checkers running in parrallel
 
