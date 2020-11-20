@@ -15,6 +15,7 @@
 - [2019 BedCon Berlin](conferences/2019_bedcon/README.md)
 - [2019 TaCon Leipzig](conferences/2019_tacon/README.md)
 - [2019 It Tage Frankfurt](conferences/2019_it-tage/README.md)
+- [2020 Golab](conferences/2020_golab/README.md)
 
 ## Misc
 - [scala](misc/scala/index.md)
