@@ -4,6 +4,7 @@
 - [2017 security workshop](workshops/2017_security_workshop/README.md)
 - [2020 Rhetorik Workshop](workshops/2020_rhetorik/README.md)
 - [2020 AWS Certified Developer Associate](courses/2020_aws_developer_associate/README.md)
+- [2020 Category Theory](courses/2020_category_theory/README.md)
 
 ## Conferences
 - [2014 goto Berlin](non-md/2014-goto_6259692.html)
