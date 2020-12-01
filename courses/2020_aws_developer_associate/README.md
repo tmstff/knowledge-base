@@ -6,7 +6,7 @@
 
 ## Goal:
 
-*Ende November durch*
+*2020 durch*
 
 ## Notes
 
@@ -190,3 +190,58 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
     * Default Interval 30s (up to 10s for more $)
     * ~15 health checkers running in parrallel
 
+### VPC
+
+* only in 1 regions
+* Subnets
+    * Tied to AZ (one? really!?)
+    * private
+    * public
+* CIDR https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
+* default VPC: only 1 public subnet
+* Internet gateway (internet access VPC)
+* NAT-Gateway / NAT-Instances
+    * deployed in public subnet
+    * acces to internet from private subnet
+* NACL
+    * Network Access Control List
+    * Firewall in/out traffic subnet
+* VPC Flow Logs!
+    * can be sent to S3 / Cloud Watch
+* VPC peering
+    * IP ranges should not overlap!
+    * not transitive!
+* VPC Endpoints (Gateway/Interface)
+    * private access to AWS services
+* Site to Site VPN vs Direct Connect 
+
+### S3
+
+* Buckets are defined at the region level
+* > 5GB => multipart uploads
+* Versioning possible
+* S3 Encryption
+    * SSE-S3: AWS Keys (AES-256)
+        * Header "x-amz-server-side-encryption": "AES256"
+    * SSE-KMS: KMS Keys
+        * key access control & audit
+        * Header "x-amz-server-side-encryption": "aws:kms"
+        * uses KMS Customer Master KEy (CMK)
+    * SSE-C: Own Keys
+        * Amazon does not store keys
+        * https must be used
+        * encryption key in header
+    * Client-Side Encryption
+        * eg amazon S3 encryption client
+* S3 Security
+    * User based / IAM
+    * Resource Based: 
+        * Bucket Policies
+        * Object ACL - finer grain (not relevant)
+        * Bucket ACL - less common (not relevant)
+
+### CLI
+
+    aws configure
+    ~/.aws/config
+    ~/.aws/credentials
