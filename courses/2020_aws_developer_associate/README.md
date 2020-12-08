@@ -240,8 +240,21 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
         * Object ACL - finer grain (not relevant)
         * Bucket ACL - less common (not relevant)
 
-### CLI
+### CLI & Stuff
 
     aws configure
     ~/.aws/config
     ~/.aws/credentials
+
+* Generator: https://awspolicygen.s3.amazonaws.com/policygen.html
+* Simulator: https://policysim.aws.amazon.com/
+* Test if command would succeed
+
+        --dry-run
+
+* STS: Security Token Service  (temporary, limited-priviledge credentials)
+* https://docs.aws.amazon.com/cli/latest/reference/sts/decode-authorization-message.html
+
+        aws sts decode-authorization-message ...
+
+* AWS EC2 Instance Metadata http://169.254.169.254/latest/meta-data
