@@ -253,8 +253,34 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
         --dry-run
 
 * STS: Security Token Service  (temporary, limited-priviledge credentials)
-* https://docs.aws.amazon.com/cli/latest/reference/sts/decode-authorization-message.html
+    * decode authorization message https://docs.aws.amazon.com/cli/latest/reference/sts/decode-authorization-message.html
+    * sts get-session-token for MFA
 
         aws sts decode-authorization-message ...
 
 * AWS EC2 Instance Metadata http://169.254.169.254/latest/meta-data
+* AWS Limits
+    * API Rate limits
+    * Service Quotas
+    * exponential backoff!
+* Credentials Provider Chain
+    * CLI
+        * CMD Opts
+        * Env variables
+        * ~/.aws/credentials
+        * ~/.aws/config
+        * Container Credentials 
+        * Instance Profile credentials
+    * SDK
+        * Env Variables
+        * Java System Properties
+        * ~/.aws/credentials
+        * Container Credentials 
+        * Instance Profile credentials
+* Credentials Best practices
+    * never in code!
+    * in AWS: Roles
+    * outside: env variables / named profiles
+* SigV4
+    * sign request to AWS for authentication
+    * HTTP Header or Query String 
