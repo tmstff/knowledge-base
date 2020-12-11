@@ -248,6 +248,281 @@
 * ![](images/digitale_und_agile_transformation.png)
 * ![](images/business_agility.png)
 
+## Einblick in die Blackbox "Machine Learning"
+* https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/OOctclOWCtlgns5RuRLJ/info
+* Slides: https://drive.google.com/open?id=1tHANWj6H20oDo-wzi9cO4sclZTUA3Dtm
+* Dennis Netzer, Georg Frey, Valerie Restat
+* Train (fit) / Predict
+* Modell (e.g. Lineare Regression), Parameter, Fehlerterm
+* Neuronales Netz
+    * Wieghted Inputs, Bias
+    * Summierung, Aktivierung, Output
+    * Input Layer
+        * Attribute => Neuronen
+    * Hidden Layer
+        * n hidden Layer, m Neuronen
+    * Output Layer
+        * Vorhersage 1 oder Multidimensional
+* Libs: Tensorflow, Keras
+* Blog: blog.ordix.de/
+    * TensorFlow & Keras
+        * https://blog.ordix.de/technologien/einstieg-in-neuronale-netze-mit-tensorflow-und-keras
+
+## Systemisch-agile Softwareentwicklung
+* https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/bxf63iJj2ZS76ODkFrkz/info
+* Dr. Christian Mennerich, Frederick Meseck
+* Systemisch: Systemtheorie nach Niklas Luhmann
+* Es gibt keinen Objektiven Standpunkt, Beobachter ist immer teil der Beobachtung
+* Sind gut in vorschnellen Schlussfolgerungen
+* Jeder Konstruiert sich seine eigene Realität
+* Kunst: die verschiedenen Realitätskonstruktionen übereinander bringen
+* Soziales System
+    * häufige Kommunikation: wird relevatn und kann neues Soziales System bilden
+    * Soziales System = Bounded Context?
+* => Realitätskonsenz
+    * wird iterativ angeglichen, Konsenz zwischen allen Beteiligten
+* Systemische Fragen
+    * Woran würden sie am Ende des Tages erkennen, dass sie einen gelungenen Arbeitstag hatten?
+    * Was ändert sich, wenn XY anwesend ist?
+    * Wer muss mit wem reden, damit ein gutes/schlechtes Ergebnis entsteht?
+* Konsenz von Software und Anwender hoch: vermutlich hohe Akzeptanz
+
+## Mit Chaos Engineering komplexe Softwaresysteme robust machen
+* https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/qveWA1pBGxpzniuviHGn/info
+* Slides: https://maikfigura.gitlab-pages.codecentric.de/mit-chaos-engineering-resiliente-software-gestalten-2020-it-tage-slides/#/_mit_chaos_engineering_robuste_softwaresysteme_gestalten
+* Maik Figura
+* Wert Chaos Engineering
+    * ^ Time to Recovery
+    * v Time to Recovery
+    * v Waste (zB technische Schulden, Bugs) https://theleanway.net/The-8-Wastes-of-Lean
+* Resilienz
+    * Robust (ua auch Bus-Faktor)
+    * Adaptiv: Auswirkungen minimal, Selbstheilung & Circuit Breaking
+    * Transformierbar: Wartbar- und Veränderbarkeit (Einfachheit grundsätzliche Entscheidungen zu ändern)
+* Vorgehensweise
+    * Experiment planen
+        * Hyptohese aufstellen
+        * Baseline festlegen und messen
+        * Angriffsplan
+        * Messen
+    * Experiment durchführen
+    * Ergebnisse sichern
+* Tipps
+    * Experimentieren anstatt testen (Hyphothesen aufstellen & Validieren)
+    * Validieren statt verifizieren (evtl mal in https://www.plutora.com/blog/verification-vs-validation anschauen)
+    * Messen was die Downtime kostet (=> sonst muss evtl nichts getan werden)
+    * Nicht in PROD anfangen ;-)
+    * Machen statt nur darüber nachdenken
+* Gameday
+    * Alle Personen mit wichtigen Stakes sind mit dabei
+    * measure cost of downtime
+    * continuously host gamedays
+    * *automate most important experiments*
+* => Regelmäßiges Sicherstellen der Resilienz (Robust-, Transformierbar-, und Adaptierbarkeit)
+
+## AWS Cloud Development Kit (CDK): Die Zukunft der Software- und Infrastrukturentwicklung
+* Dr. Sven Seiler, Henning Teek
+* => Raus gegangen
+
+## Apache Kafka: Architektur-Pattern für verteilte, hybride und globale Apache Kafka Deployments
+* https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/D2zKuuJKFtEpwtwPnrc6/info
+* Kai Wähner
+* Kafka Cluster
+    * Zookeeper
+    * Kafka Broker
+    * Optional
+        * Schema Registry
+        * Kafka Connect
+        * Rest Proxy
+* Nächstes Jahr: Zookeeper wird entfernt
+* Desaster Recovery
+    * Recovery Point Objective (Zero Data Loss)
+    * Recovery Time Objective (Zero Downtime)
+* Single Kafka Cluster
+    * Hochverfügbarkeit
+        * 3 * Broker & ZK
+        * 2 * Schema Registry & Co
+        * 3 Data Centers: zB 3 AZ in 1 Region
+            * Gute Latenz nötig
+        * 2 Data Centers:
+            * Quorum in 2 DC is not possible
+* Multiple Kafka Clusters
+    * Replikation
+        * Confluenct Replicator
+        * Mirror Maker
+        * von confluent nicht empfohlen:
+            * uReplicator
+            * Mirus
+            * Brooklin
+* Confluent Cluster Linking
+    * no kafka connect etc required
+    * noch im Preview
+
+## How to ensure Testing Robustness in Continuous Testing Environments
+* https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/dhtj9hVVJWY5SCPnpaMs/info
+* Eylul Akar, Mesut Durukal
+* Flaky Test
+    * Async Wait ~ 30 %
+        * => Retry / Enventually
+        * Cleanup
+    * Suite Dependency
+        * Testgroup (why does this help?)
+    * Cover Execution Environments
+        * Selenium Hub
+* => Raus gegangen
+
+## Domain-driven Design – Deep Dive
+* https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/rL02FDJcGwR2Ia41kDHk/info
+* Hermann Woock
+* Kompliziert vs Komplex
+* > Wannen-Bild
+* Frühe Einbeziehung des Kunden
+    * Domänenexperte sitzt im Team
+    * Ubiquitous Language
+* => Raus gegangen
+
+## Autonomes Fahren und Open-Source-Technologien – Ist das eine gute Idee?
+* https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/tf6cQfBB5Ifp29ZXBOFc/info
+* Andreas Riexinger
+* Warum?
+    * Erhöhung der Sicherheit
+    * Demokratisierung der Mobilität
+    * Höhere Effizienz (angeblich 39% kraftstoffersparnis)
+    * Staureduktion (angeblich 80% Verbesserung Verkehrsfluss)
+    * Erhöung der Produktivität (naja ...)
+* Komplexität
+    * Sense
+    * Locate
+    * Think, Perceive & Plan
+    * Act
+* Herausforderungen
+    * Tools sind nicht auf Interoperabilität ausgelegt
+    * Hohe Kosten für Adapter
+* OpenADx
+    * Open Autonomous Driving  EXcelleration
+
+## Wie wir unsere Welt verändert haben!
+* https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/f95byxDWjwARukpxMyG9/info
+* Dr. Carola Lilienthal
+* => Raus gegangen
+
+## Flexible Software-Architekturen: Mit der Zeit gehen
+* https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/VIMPkpBAGHWHFAcOWZLQ/info
+* Falk Sippach
+* ISAQB
+* Flexibel
+    * Skalierbar
+    * Elastisch
+    * Freie Technologiewahl
+    * Austauschbar
+    * ...
+* Top 3 bis Top 5 Prioritäten festlegen
+* => Raus gegangen
+
+## Pact Wars – die Rebellion der API-Consumer
+* https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/VaOMOWryEsAKzeOar8Jj/info
+* Kevin Kessenich, Marcos Scholtz
+* Slides: https://cofinpro.gitlab.io/Tech/konferenzen/pact-wars/
+* Code: https://gitlab.com/Cofinpro/Tech/konferenzen/pact-wars/
+* Contracts
+* Ansätze
+    * Provider First
+    * Contract First
+        * Contract schreiben, zb openapi.yml
+    * Consumer-First ("Consumer-Driven")
+        * Consumer schreibt Contract
+        * Jeder Consumer bekommt evtl seinen eigenen Contract
+* Stolpersteine
+    * Keine Prio, keine Zeit
+        * keine Tests, oder keine Provider-Tests
+            * Aufnehmen in DOD?
+            * Vorbedingung mit Merge?
+    * Roter Test wird Ignoriert
+        * Vorbedingung mit Merge?
+    * Provider-Teams werden durch Consumer-Änderungen blockiert
+        * Pending Pact
+* Pact kann auch Messaging :-)
+    * => Message Pacts
+* Dokumentation aus Pact generieren?
+
+## Die Gemeinwohlökonomie: ein Wirtschaftsmodell für unsere Zukunft
+* https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/K7Bt09BvPp0BbrkDWcCh/info
+* Ute Haedke
+* Slides: https://drive.google.com/open?id=1NnCc3DEP_7lFQK5EkdieihQtYDlfWUEU
+* https://web.ecogood.org/de/
+* https://web.ecogood.org/de/rhein-main/
+
+## Dokumentation in der IDE schreiben? Klar, mit AsciiDoc!
+* https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/tuYOxVFH7IkaWhoEdCL1/info
+* Alexander Schwartz
+* https://asciidoc-editor.ahus1.de/#/edit
+* Womit Dokumentation schreiben?
+    * Office Suite
+    * asciidoc
+* https://asciidoctor.org/
+* Plugin für Idea!
+* Integration in gitlab!
+* Diagramme
+    * https://www.diagrams.net/
+    * https://asciidoctor.org/docs/asciidoctor-diagram
+    * ditaa
+* Swagger => Konvertierung nach Asciidoc
+* https://github.com/asciidoctor
+* https://github.com/asciidoc/asciidoc
+
+## The Art of Coaching: Die systemische Sichtweise auf Impediments
+* https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/YauEuqND7InI2jLA6MHH/info
+* Dr. Markus Blaschka
+* Slides: https://drive.google.com/open?id=1_JZuObFQ73umgxJoWBNJFBNrqXIvogfx
+* Experte vs Coach
+* "Alle Fragen der Selbstorganisation sind im Kern Konflikte"
+    * mit sicher selbst oder der eigenen Rolle
+    * mit anderen Menschen (im Team)
+    * mit der Kultur, den Werten, dem Unternehmen
+* Konflikte müssen (sollten) wir klären!
+    * Konflikt bewusst machen
+    * Professionelle Belgeitung kann hilfreich sein
+    * Aber: wenn wir zu sehr auf der fachlichen Ebene bleiben, kommt das Team nie an den wahren Konflikt
+    * Coaching Diamant
+        * Hinter jedem Thema liegt ein Thema
+        * Trust (ins sich selbst, die Gegebenheiten?), Awareness (Worum geht es?), Choice (Welches sind die Möglichkeiten?), Action (ins Tun kommen), Learning (?)
+        * Mögliche Probleme
+            * Bedürfnisse (Anerkennung, Teilhabe, Autorität, Wirksamkeit, ...)
+            * Wertkonflikte
+            * Überlastung
+            * Antipathie
+        * Wie kommen wir zum Konflikt hinter dem Problem?
+            * Courage, Focus, Commitment, Respect, Openness
+* Qualität der Beziehung ist ausschlaggebend
+    * => Innere Haltung
+        * Systemisch
+        * Lösungsfokussiert
+        * Konstruktivistisch
+        * wichtig:
+            * Neugier
+            * Empathie
+            * Wertschätzung
+        * Ask, don't tell
+        * Mehr Optionen finden als im Dilemma
+        * Den Elefanten im Raum ansprechen
+        * Anerkennen was ist, Acceptance
+* Werkzeuge
+    * Ressourcen-fragen (Woher könnte man noch weitere bekommen?)
+    * Verschlimmerungs-fragen (Was könnte man tun ums schlimmer zu machen?)
+    * Zirkuläre Fragen (Was würde XY sagen? Auch Dinge)
+    * Skalierung / Hypothesen
+* Selbstorganisation
+    * => Verantwortung übernehmen
+    * Häufig sind Agile Coaches zu fachlich unterwegs => Experten-Falle
+        * => mehr Coach, weniger Experte!
+
+
 ## Ideen
 * https://www.talque.com/app#/app/org/org-event/5MiNavDvNlNGUvVnVu2z/jM88uWpyEI5mmc9HOFTB/info
 * Lesen: Wie Wirklich ist die Wirklichkeit?
+* Lesen: https://theleanway.net/The-8-Wastes-of-Lean
+* Quorum?
+* pact für go anschauen
+* Go REST Interface aus PACT contract generieren?
+* Pact => Swagger => Asciidoc?
+* Zertifizierungsprozess für die tarent anstarten <=
