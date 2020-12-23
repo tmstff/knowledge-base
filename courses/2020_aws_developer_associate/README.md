@@ -3,25 +3,20 @@
 * https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/
 * https://stephanemaarek.com/
 * https://aws.amazon.com/de/certification/certification-prep/
+* Slides & Code: https://drive.google.com/open?id=17XcwcDiU_Twynr3zq0iR_Sp6zA7TjEcf
 
-## Goal:
-
-*2020 durch*
-
-## Notes
-
-### Regions
+## Regions
 
 Regions - Availability Zone ~data center
 https://aws.amazon.com/de/about-aws/global-infrastructure/
 
-### IAM
+## IAM
 
 * user - group - role (machine)
 * SAML Standard (Active directory) https://de.wikipedia.org/wiki/Security_Assertion_Markup_Language
 * Security Group: Region Scoped
 
-### EC2
+## EC2
 
 * SSH Connect to EC2 Instance
 
@@ -80,7 +75,7 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
     * physical disk attached to machine
     * high IOPS
 
-### EFS
+## EFS
 * Elastic File System
 * Manages NFS, multi-AZ
 * HA, Scalable, Expensive, Pay Per Use
@@ -94,7 +89,7 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
 * https://docs.aws.amazon.com/efs/latest/ug/mounting-fs.html
 
 
-### RDS
+## RDS
 
 * Relational Database Service
     * Postgres
@@ -109,7 +104,7 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
     * up to 35 days
 * Manual Snapshots
 
-#### Read Replicas & Multi AZ
+### Read Replicas & Multi AZ
 * Read Replicas
     * up to 5
     * within AZ, Cross AZ, Cross Region
@@ -139,7 +134,7 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
     * usname / password
     * IAM for MySQL, Postgres Aurora
 
-#### Aurora
+### Aurora
 
 * performance boost: 5x MySql, 3x Postgres
 * 6 Instances
@@ -160,7 +155,7 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
     * Global
 * select global reader / writer endpoint for access
 
-#### AWS ElastiCache
+### AWS ElastiCache
 
 * Redis
 * memcached
@@ -169,7 +164,7 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
 * caching Pattern
     * Lazy Loading / Cache-Aside / Lazy Population
 
-### Route 53
+## Route 53
 
 * A: hostname => IPv4
 * AAAA: hostname => IPv6
@@ -190,7 +185,7 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
     * Default Interval 30s (up to 10s for more $)
     * ~15 health checkers running in parrallel
 
-### VPC
+## VPC
 
 * only in 1 regions
 * Subnets
@@ -215,7 +210,7 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
     * private access to AWS services
 * Site to Site VPN vs Direct Connect 
 
-### S3
+## S3
 
 * Buckets are defined at the region level
 * > 5GB => multipart uploads
@@ -240,7 +235,7 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
         * Object ACL - finer grain (not relevant)
         * Bucket ACL - less common (not relevant)
 
-### CLI & Stuff
+## CLI & Stuff
 
     aws configure
     ~/.aws/config
@@ -284,3 +279,75 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
 * SigV4
     * sign request to AWS for authentication
     * HTTP Header or Query String 
+
+## Advanced S3 & Athena
+
+* enable MFA Delete (for permanent delete of object)
+    * enable through cli
+    * with root account!
+* S3 Access Logs
+    * Logging Bucket
+        * never monitor the logging bucket
+            * => logging loop / expotential loop
+        * AWS Console: Enable Server Access Logging
+            * Acl updated automatically
+        * Analyse with Anthena
+* S3 Replication
+    * CRR (Cross Region Replication)
+        * e.g. lower latency access
+        * desaster recovery
+        * or replication across accounts
+    * SRR (Same Region Replication)
+        * e.g. log aggregation
+        * or live replication prod => test
+    * IAM has to be setup
+    * Only new objects are replicated
+    * deletes markers are by default not replicated (but can be!)
+    * permanent deletes are never replrecated
+    * not transitive
+    * AWS Console: Management => create replication rule
+    * replication including version ID
+    * pre-signed URLs
+        * SDK or CLI
+        * default 3600 seconds (--expires-in)
+        * permissions inherited from issuing user
+        * `aws s3 presign s3://mybucket/myobject --region my-region`
+    * Storage Classes
+        * S3 Standard
+            * Sustain 2 concurrenct facility failures
+            * Standard-Stuff
+        * IA
+            * 128kb min charge / object
+            * 30 days min
+            * Retrieval fee / GB
+            * S3 Standard-IA (Infrequent Access)
+                * Rapid Access when needed
+                * Less Available Lower Cost
+                * Desaster recovery, backups
+            * S3 One Zone-IA
+                * Single AZ
+                * Less Available Lower Cost then Standard-IA
+                * secondary data backups, recreatable data
+        * S3 Intelligent Tiering
+            * 30 days min
+            * fee for auto-tiering
+            * aut. moves objects between 2 access tiers
+            * Resilient against single-AZ events
+        * Glacier
+            * archive
+            * low cost
+            * retained > 10 years, min. 90 days
+            * Retrieval fee / GB
+            * 40 kb min charge / object
+            * each archive (file) up to 40 GB
+            * archives are stored in vaults
+            * Retrieval Options
+                * Expedited 1-5 minutes
+                * Standard 3-5 hours
+                * Bulk 5-12 hours
+        * Glacier Deep Archive
+            * Retrieval Options
+                * Standard 12 hours
+                * Bulk 48 hours
+            * min. 180 days
+        * S3 Reduced Redundancy Storege (deprecated)
