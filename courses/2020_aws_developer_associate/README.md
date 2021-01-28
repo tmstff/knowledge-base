@@ -323,11 +323,11 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
             * S3 Standard-IA (Infrequent Access)
                 * Rapid Access when needed
                 * Less Available Lower Cost
-                * Desaster recovery, backups
+                * for: Desaster recovery, backups
             * S3 One Zone-IA
                 * Single AZ
                 * Less Available Lower Cost then Standard-IA
-                * secondary data backups, recreatable data
+                * for: secondary data backups, recreatable data
         * S3 Intelligent Tiering
             * 30 days min
             * fee for auto-tiering
@@ -351,3 +351,90 @@ https://aws.amazon.com/de/about-aws/global-infrastructure/
                 * Bulk 48 hours
             * min. 180 days
         * S3 Reduced Redundancy Storege (deprecated)
+    * Licecycle rules
+        * move to other storage class (transitions actions) / delete (expiration action) after a while
+        * can be configured for certain prefix
+    * S3 limitations per prefix
+    * KMS Limits per Key
+    * S3 Byte-Range fetches can be used to optimize performance
+    * S3 Select & Glacier Select
+        * SQL filtering for rows & columns
+            * e.g. CSV filtering
+    * S3 Event Notifications
+        * Select by event type and object name
+        * targets: SNS, SQS, Lambda Functions
+    * Athena
+        * Serverkess service to perform analytics against S3
+        * via SQL / JDBC / ODBC
+        * CSV, JSON etc
+        * BI / Analytics / Reporting
+    * S3 Oject Lock & Glacier Vault Lock
+
+## AWS CloudFront
+
+* CDN
+* DDoS protection with Shield
+* Origins: 
+    * S3 Bucket (edge caching, Security: Origin Access Identity, ingress for uploas)
+    * Custom Origin (http)
+* Blacklist / Whitelist per Country (3rd party IP database)
+* CloudFront Signed URL / Cookies
+    * Expiration, IP Randes, Trusted signers (AWS Accounts)
+    * Validity: 
+        * shared content => minutes
+        * private content => years?
+    * signed URL: individual files
+    * signed cookie: multiple files
+
+## ECS / ECR
+* config file (via user data) to specify ECS cluster (/etc/ecs/ecs.config : ECS_CLUSTER)
+* Use correct AMI!!
+* Make Sure ECS agent is running
+* ECS Task definition:
+    * JSON how to run docker image (Port bidning, image etc) => analog deployment.yml
+    * can have an IAM Role
+        (/etc/ecs/ecs.config : ECS_ENABLE_TASK_IAM_ROLE)
+* ECS Service (analog kubernetes deployment)
+    * ensures instance count
+* ECS Load Balancer
+    * Dynamic Load Balancer
+* ECR
+    * CLI v1: exectue output / env variables
+    * CLI v2: pipe password
+* Fargate: Serverless Container Execution
+* ECS IAM Deep Dive
+    * EC2 Instance Profile (Role!)
+        * used by ECS agent
+        * API calls to ECS service
+        * container logs => cloud watch
+    * ECS Task Role (per container)
+* ECS Auto Scaling
+    * Types
+        * Target Tracking
+        * Step Scaling
+        * Scheduled Scalind
+    * Cluster Capacity Providers
+    * nochmal genauer anschauen! => ausprobieren?
+
+## AWS Elastic Beanstalk
+* Deploy applications
+* Pay for only underlying Services
+* Manages
+    * Instance config & OS
+    * Deployment strategy
+* Arch models:
+    * Single Instance
+    * ELB + ASG
+    * ASG
+* Components
+    * App
+    * App Version
+    * Env Name
+* Promote & Rollback Versions
+* Deployment Options
+    * All at once (fast, downtime)
+    * Rolling (with bucket size)
+    * Rolling with additional batches (with bucket size, extra cost)
+    * Imutable (new ASG, most cost, slow, easy rollback)
+* blue/green via environments (more or less manual)
+* ![Deployment Strategies](images/elasticbeanstalk-deployment-strategies.png)
