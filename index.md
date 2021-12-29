@@ -20,6 +20,7 @@
 - [2019 It Tage Frankfurt](conferences/2019_it-tage/README.md)
 - [2020 Golab](conferences/2020_golab/README.md)
 - [2020 IT Tage](conferences/2020_it-tage/README.md)
+- [2021 tech Friday tarent](conferences/2021_tech_friday_tarent/README.md)
 
 ## Misc
 - [scala](misc/scala/index.md)
