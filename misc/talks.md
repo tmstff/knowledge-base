@@ -26,7 +26,8 @@
 
 ## Event Storming
 
-* Henning Schwentner / WPS
+Henning Schwentner / WPS
+
 * Model verstehen
 * Collaborative Modelling
 * "richtige Leute": 
@@ -62,3 +63,55 @@
     * Domain Driven Design Kompakt
     * Domain Storytelling
 * Empfehlung: DDD Meetup zB Rhein-Main
+
+
+## Software Supply Chain Attacks
+Marc Ohm
+
+* Survey: 92% developers "trsust the code they use"
+* example: event-stream
+    * crypto stealing malware, again bitpay/copay
+    * 1.5 mio dwlds, 1,6k packages used it as dependency
+    * undiscovered for 2 months
+    * package was no longer maintained
+    * hacker got maintainership
+        * and introduced dependency to malicious package
+            * with modified npm module (source code repo did not contain change)
+    * Target were specific bitcoin apps
+* Injection
+    * publish new package
+        * user-after-free (no longer used)
+        * Typosquatting (similar to popular names)
+        * zombie package (maybe used somewhere else)
+    * takeover existing package
+        * Code Repo
+            * pull request (Contributor)
+            * commint (Maintainer)
+        * Build System
+            * manipulated download
+            * compromised cache
+            * compromised toolchain (eg mal. compiler)
+        * Package Repo
+            * Compromised credentials
+            * Vulnerability
+            * Alternative repository (maven)
+* Typical Attack
+    * Typosquatting (61%)
+    * Malicious is exection executed during installation (56%)
+    * Steal sensitive info (55%)
+    * Obfuscation (49%)
+    * 2 month or mode from official repo (
+* What can a dev do?
+    * know your dependency
+    * reduce your dependencies
+    * Watch out for imposters
+￼
+* Anomaly based detection
+    * what artifacts are written 
+    * => used in package hunter in github
+* Fingerprint
+    * Signatures-based hunting npm
+        * on npm repo: 70k hits, just 7 findings
+        * imitators
+* Trusted repositories
+* golang: source code based
