@@ -115,3 +115,52 @@ Marc Ohm
         * imitators
 * Trusted repositories
 * golang: source code based
+
+
+## Makro-Architektur
+
+Eberhardt Wolff
+
+[Folge 94 - Makro-Architektur - Prioritäten und Überblick](https://software-architektur.tv/2021/12/03/folge94.html)
+
+* Modul-Entscheidungen / Microservice / SCS
+    * Information Hiding
+        * => leichtere Änderbarkeit
+    * Autonomie
+    * mehr Flexibilität pro Team
+* Systementscheidungen
+    * langfristig stabil
+    * sollte Modulentscheidungen ermöglichen
+* Gute Makroarchitektur
+    * minimales Regelset
+        * => strikt durchsetzen
+    * stark priorisieren! => auf das wesentliche reduzieren
+    * Abgrenzung: was wird im Team entschieden, was nicht?
+    * Autonomie von Teams => weniger Last für Architekten
+    * parametrisierter Test, der Architekturregeln prüft?
+    * Regeln aufschreiben & Kommunizieren
+    * Empfehlungen - evtl eher durch Beratung?
+    * was steht drin
+        * validierbare Regeln
+        * Governance, Security, Unternehmensrichtlinien
+        * ISA-Prinzipien => eigene Folge!
+            * wie geht Integration? Sync, async, UI
+            * Kommunikation? REST, MQTT etc
+            * Metadaten, Kommunikation, Tracing
+            * Observability (Monitoring, Logging)
+            * Resilienz
+        * möglichst technologie-unabhängig, basierend auf allgemeinen Standards
+* Eher nicht Teil von Makroarchitektur?
+    * statische Codeanalyse vorschreiben? => eher nicht
+    * Qualitätsziele im Team festlegen
+* Goodharts Law
+    * Incentive zerstört Metrik
+* Beispiel / Idee: Benennung "Anforderungen" statt "Makroarchitektur"
+    * Architekt ist Berater / Ansprechpartner für Umsetzung der Anforderungen
+    * wichtig sind die Begründungen der Entschiedungen
+* Überlegung
+    * Teamarchitekten müssen nicht zwangsläufig bei Markoarchitektur mitarbeiten
+    * Es könnte ein Architekten-Team geben, das sie vorgibt (gute Idee?)
+        * Wenn ja: Teams frühzeitig mit einbeziehen
+
+
