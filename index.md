@@ -26,4 +26,5 @@
 - [scala](misc/scala/index.md)
 - [feature_branch_tests_stash_jenkins](misc/feature_branch_tests_stash_jenkins.md)
 - [Tools and Libs](misc/tools_and_libs.md)
+- [Blog Posts & Articles](misc/blog_posts_and_articles.md)
 - [talks](misc/talks.md)
