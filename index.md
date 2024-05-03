@@ -22,6 +22,8 @@
 - [2020 IT Tage](conferences/2020_it-tage/README.md)
 - [2021 tech Friday tarent](conferences/2021_tech_friday_tarent/README.md)
 - [2022 goto Amsterdam](conferences/2022_goto/2022_goto.md)
+- [2024 summit Community Days Softwarearchitektur & Softwareentwicklung](conferences/2024_summit/README.md)
+
 
 ## Misc
 - [scala](misc/scala/index.md)
