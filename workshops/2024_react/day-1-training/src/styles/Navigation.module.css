@@ -1,0 +1,17 @@
+.navigation {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.active {
+    font-weight: normal;
+}
+
+.inactive {
+    font-weight: lighter;
+}
+
+.navItem {
+    padding: 10px;
+}

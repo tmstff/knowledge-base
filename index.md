@@ -6,7 +6,8 @@
 - [2020 Rhetorik Workshop](workshops/2020_rhetorik/README.md)
 - [2020 AWS Certified Developer Associate](courses/2020_aws_developer_associate/README.md)
 - [2020 Category Theory](courses/2020_category_theory/README.md)
-- [2020 react.js](courses/2020_react/README.md)
+- [2020 react.js](workshops/2020_react/README.md)
+- [2024 react / TypeScript](workshops/2024_react/README.md)
 
 ## Conferences
 - [2014 goto Berlin](non-md/2014-goto_6259692.html)
