@@ -1,5 +1,15 @@
 # Talks
 
+## Your tests also need some architecting By Jonas Geiregat
+
+ * [https://www.youtube.com/watch?v=T0p4FAJdYOQ](https://www.youtube.com/watch?v=T0p4FAJdYOQ)
+ * Tests allow evolution
+ * Test document behaviour (clear communication is very important)
+ * Tests code is at least as important as productions code (though some different rules apply)
+ * Have all relevant details within each test method
+ * Use Testing Honeycomb (Focus on behaviour, less focus on integration & implementatin details)
+ * Use Object Mother Pattern 
+
 ## Self Service Ops: Jody Mulkey - DevOps in the Enterprise: A Transformation Journey
 
 * Jody Mulkey: CTO ticketmaster.com
