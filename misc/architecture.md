@@ -7,3 +7,4 @@ Terminology](https://www.isaqb.org/wp-content/uploads/2020/10/iSAQB_Glossary_of_
 * [iSAQB und Zertifizierung](https://software-architektur.tv/2020/06/26/folge003.html) (Eberhard Wolf)
 * [Microservices](https://martinfowler.com/articles/microservices.html) (James Lewis / Martin Fowler)
 * [Visualizing sociotechnical architectures with Context Maps](https://speakerdeck.com/mploed/visualizing-sociotechnical-architectures-with-context-maps) (Michael Plöd)
+* [Open Practice Library](https://openpracticelibrary.com/)
