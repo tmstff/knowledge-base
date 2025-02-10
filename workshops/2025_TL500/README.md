@@ -2,9 +2,9 @@
 
 ## Links
 
-- https://rht-labs.com/tech-exercise/slides/
-- https://rht-labs.com/tech-exercise/#/1-the-manual-menace/README
-- https://github.com/rht-labs/tech-exercise
+- [https://rht-labs.com/tech-exercise/slides/](https://rht-labs.com/tech-exercise/slides/)
+- [https://rht-labs.com/tech-exercise/#/1-the-manual-menace/README](https://rht-labs.com/tech-exercise/#/1-the-manual-menace/README)
+- [https://github.com/rht-labs/tech-exercise](https://github.com/rht-labs/tech-exercise)
 ## Key Takeaways
 
 - [Visualization of work](https://openpracticelibrary.com/practice/visualisation-of-work/) is super useful
