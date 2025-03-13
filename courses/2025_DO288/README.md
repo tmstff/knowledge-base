@@ -845,6 +845,7 @@ Eviction strategy
 | Best-Effort | Pods without requests and limits, which have an unpredictable resource consumption. | First pods to evict.                                   |
 | Burstable   | Pods with requests, and no limits or limits that exceed the requests.               | Pods to evict if there are no `Best-effort` pods left. |
 | Guaranteed  | Pods with equal requests and limits.                                                | Never evicted.                                         |
+
 ```sh
 oc describe limitranges
 
@@ -870,6 +871,7 @@ Probes
 | `periodSeconds`       | No        | Specifies the frequency of the checks.                                                                                       | 1             |
 | `successThreshold`    | No        | Specifies the minimum consecutive successes for the probe to be considered successful after it has failed.                   | 1             |
 | `failureThreshold`    | No        | Specifies the minimum consecutive failures for the probe to be considered failed after it has succeeded.                     | 3             |
+
 ```yaml
 readinessProbe:
   httpGet:
