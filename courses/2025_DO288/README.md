@@ -1,4 +1,51 @@
 # 2025 DO 288 Red Hat OpenShift Developer II: Building and Deploying Cloud-native Applications
+- [2025 DO 288 Red Hat OpenShift Developer II: Building and Deploying Cloud-native Applications](#2025-do-288-red-hat-openshift-developer-ii-building-and-deploying-cloud-native-applications)
+  - [Setup](#setup)
+- [DO288](#do288)
+  - [Basics](#basics)
+    - [Links](#links)
+  - [Setup](#setup-1)
+  - [Red Hat OpenShift Concepts and Terminology](#redhat-openshift-concepts-and-terminology)
+  - [Deployments](#deployments)
+    - [odo](#odo)
+    - [devfile example](#devfile-example)
+    - [Links](#links-1)
+  - [Chapter 3.  Building and Publishing Container Images](#chapter3building-and-publishing-container-images)
+      - [Links](#links-2)
+    - [Using External Registries in Red Hat OpenShift](#using-external-registries-in-red-hat-openshift)
+    - [Creating Image Streams](#creating-image-streams)
+  - [Chapter 4.  Managing Red Hat OpenShift Builds](#chapter-4--managing-red-hat-openshift-builds)
+      - [secrets \& config maps](#secrets--config-maps)
+    - [Managing Application Builds](#managing-application-builds)
+    - [Triggering Builds](#triggering-builds)
+    - [Customizing an Existing S2I Base Image](#customizing-an-existing-s2i-base-image)
+  - [Chapter 5.  Managing Red Hat OpenShift Deployments](#chapter-5--managing-red-hat-openshift-deployments)
+      - [Links](#links-3)
+    - [Managing Application Deployments](#managing-application-deployments)
+      - [Secrets and Configuration Maps](#secrets-and-configuration-maps)
+      - [Using Service Accounts](#using-service-accounts)
+      - [Links](#links-4)
+    - [Deploying Stateful Applications](#deploying-stateful-applications)
+      - [Stateful Sets](#stateful-sets)
+      - [Links](#links-5)
+    - [Monitoring Application Health](#monitoring-application-health)
+      - [Specifying Application Resource Requirements](#specifying-application-resource-requirements)
+      - [Red Hat OpenShift Application Health Checks](#redhat-openshift-application-health-checks)
+      - [Creating Probes by Using the CLI](#creating-probes-by-using-the-cli)
+      - [Links](#links-6)
+  - [Chapter 6.  Deploying Multi-container Applications](#chapter6deploying-multi-container-applications)
+    - [Red Hat OpenShift Templates](#redhat-openshift-templates)
+    - [Install Applications by Using Helm Charts](#install-applications-by-using-helm-charts)
+      - [Links](#links-7)
+    - [The Kustomize CLI](#the-kustomize-cli)
+      - [Templating Deployments with Kustomize](#templating-deployments-with-kustomize)
+      - [Links](#links-8)
+    - [Red Hat OpenShift Pipelines Architecture and Components](#redhat-openshift-pipelines-architecture-and-components)
+      - [Links](#links-9)
+    - [Creating CI/CD Workflows by Using Red Hat OpenShift Pipelines](#creating-cicd-workflows-by-using-redhat-openshift-pipelines)
+      - [Links](#links-10)
+
+TOC created using the [yzhang.markdown-all-in-one VS Code extension](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 
 ## Setup
 
@@ -272,7 +319,7 @@ oc secrets link --for=pull default SECRET_NAME
 oc secrets unlink default wrong-registry-credentials
 ```
 
-side not on how to access event log:
+side note on how to access event log:
 ```bash
 oc get event --field-selector type=Warning --sort-by='.lastTimestamp'
 ```
