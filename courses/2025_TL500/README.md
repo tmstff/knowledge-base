@@ -1,5 +1,16 @@
 # TL500 DevOps Culture and Practices
 
+- [TL500 DevOps Culture and Practices](#tl500-devops-culture-and-practices)
+	- [Links](#links)
+	- [Key Takeaways](#key-takeaways)
+		- [Presentation / Teaching Learnings](#presentation--teaching-learnings)
+		- [Interesting Concepts](#interesting-concepts)
+	- [Details](#details)
+		- [Event Storming](#event-storming)
+		- [Metrics Based Process Mapping](#metrics-based-process-mapping)
+
+TOC created using the [yzhang.markdown-all-in-one VS Code extension](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+
 ## Links
 
 - [https://rht-labs.com/tech-exercise/slides/](https://rht-labs.com/tech-exercise/slides/)
