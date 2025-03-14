@@ -1,5 +1,6 @@
-## Setup
+# 2025 DO 288 Red Hat OpenShift Developer II: Building and Deploying Cloud-native Applications
 
+## Setup
 
 ```sh
 crc setup
