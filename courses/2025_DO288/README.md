@@ -365,14 +365,14 @@ docker://registry.ocp4.example.com:8443/redhattraining/hello-world-nginx
 
 ## Chapter 4.  Managing Red Hat OpenShift Builds
 
-builder image
-- assemble script
-- run script
-
-builder image
+build strategy
 - Source / Source-to-Image (S2I) build
 - Docker build
 - Custom build
+
+builder image
+- assemble script
+- run script
 
 The build input sources, in order of precedence are: `Dockerfile`, `Git`, `Image`, `Binary`, `Input Secrets`, and `External artifacts`.
 
