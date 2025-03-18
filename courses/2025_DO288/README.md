@@ -1313,7 +1313,7 @@ tkn pr logs my-pipeline-1
 
 #### Links
 
-- [Tekton Tasks](https://tekton.dev/docs/pipelines/tasks/
+- [Tekton Tasks](https://tekton.dev/docs/pipelines/tasks/)
 - [Tekton Pipelines](https://tekton.dev/docs/pipelines/pipelines/)
 - [Tekton Task versus ClusterTask](https://tekton.dev/docs/pipelines/tasks/#task-vs-clustertask)
 - [Getting Started with Tekton Resolvers](https://tekton.dev/docs/pipelines/resolution-getting-started/)
