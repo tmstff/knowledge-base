@@ -8,7 +8,7 @@
 - [2020 Category Theory](courses/2020_category_theory/README.md)
 - [2020 react.js](workshops/2020_react/README.md)
 - [2024 react / TypeScript](workshops/2024_react/README.md)
-- [2025 TL500 DevOps Culture and Practices](courses/2025_TL500/README.md)
+- [2025 TL500 DevOps Culture and Practices](workshops/2025_TL500/README.md)
 - [2025 DO 288 Red Hat OpenShift Developer II: Building and Deploying Cloud-native Applications](courses/2025_DO288/README.md)
 
 ## Conferences
