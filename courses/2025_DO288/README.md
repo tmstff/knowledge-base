@@ -366,17 +366,18 @@ docker://registry.ocp4.example.com:8443/redhattraining/hello-world-nginx
 ## Chapter 4.  Managing Red Hat OpenShift Builds
 
 build strategy
-- Source / Source-to-Image (S2I) build
-- Docker build
-- Custom build
+- [Source / Source-to-Image (S2I) build](https://docs.redhat.com/en/documentation/openshift_container_platform/3.11/html-single/developer_guide/index#source-to-image-strategy-options) (```sourceStrategy```)
+- [Docker build](https://docs.redhat.com/en/documentation/openshift_container_platform/3.11/html-single/developer_guide/index#docker-strategy-options)  (```dockerStrategy```)
+- [Custom build](https://docs.redhat.com/en/documentation/openshift_container_platform/3.11/html-single/developer_guide/index#custom-strategy-options) (```customStrategy```)
+- [Pipeline build](https://docs.redhat.com/en/documentation/openshift_container_platform/3.11/html-single/developer_guide/index#pipeline-strategy-options) (```jenkinsPipelineStrategy```)
 
-builder image
+builder image is [automatically detected](https://docs.redhat.com/en/documentation/openshift_container_platform/3.11/html-single/developer_guide/index#specifying-source-code) for S2I builds and contains amongst others
 - assemble script
 - run script
 
 The build input sources, in order of precedence are: `Dockerfile`, `Git`, `Image`, `Binary`, `Input Secrets`, and `External artifacts`.
 
-build config (bc)
+build config (bc) - example for S2I builds
 ```yaml
 kind: BuildConfig
 apiVersion: build.openshift.io/v1
@@ -1046,7 +1047,7 @@ helm create my-helm-chart
 
 templating language
 
-```yaml
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -1057,7 +1058,7 @@ spec:
 ```
 
 variable scope
-```yaml
+```
 {{ with .Values.image }}
 ...
       - image: {{ .repository | quote }}
@@ -1068,7 +1069,7 @@ variable scope
 ```
 
 control flow
-```yaml
+```
       containers:
       - image: {{ .Values.image.repository | quote }}
       - {{ if eq .Values.createSharedSecret "true" }}
@@ -1083,7 +1084,7 @@ control flow
 ```
 
 example
-```yaml
+```
 ...file omitted...
   database-user: {{ randAlphaNum 20 | b64enc }}
   {{end}}
