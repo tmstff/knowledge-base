@@ -16,6 +16,8 @@ TOC created using the [yzhang.markdown-all-in-one VS Code extension](https://mar
 - [https://rht-labs.com/tech-exercise/slides/](https://rht-labs.com/tech-exercise/slides/)
 - [https://rht-labs.com/tech-exercise/#/1-the-manual-menace/README](https://rht-labs.com/tech-exercise/#/1-the-manual-menace/README)
 - [https://github.com/rht-labs/tech-exercise](https://github.com/rht-labs/tech-exercise)
+- [https://app.stellafai.com/Space/Visualize/index/9F01BEC2-FF6C-49BC-B435-351AEF39F5BD](https://app.stellafai.com/Space/Visualize/index/9F01BEC2-FF6C-49BC-B435-351AEF39F5BD)
+
 ## Key Takeaways
 
 - [Visualization of work](https://openpracticelibrary.com/practice/visualisation-of-work/) is super useful
