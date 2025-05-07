@@ -283,6 +283,8 @@ use / define
 - registry.access.redhat.com (supported, browse with [catalog.redhat.com/software/containers/explore](https://catalog.redhat.com/software/containers/explore))
 - [quay.io](https://quay.io)
 
+Get pull secret: [https://console.redhat.com/openshift/install/pull-secret](https://console.redhat.com/openshift/install/pull-secret)
+
 Create image pull secret ...
 
 ```sh
