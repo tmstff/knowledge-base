@@ -10,6 +10,7 @@
 - [2024 react / TypeScript](workshops/2024_react/README.md)
 - [2025 TL500 DevOps Culture and Practices](workshops/2025_TL500/README.md)
 - [2025 DO 288 Red Hat OpenShift Developer II: Building and Deploying Cloud-native Applications](courses/2025_DO288/README.md)
+- [Deliver Engaging Presentations](courses/2026_engaging_presentations/README.md)
 
 ## Conferences
 - [2014 goto Berlin](non-md/2014-goto_6259692.html)
