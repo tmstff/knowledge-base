@@ -35,4 +35,5 @@
 - [feature_branch_tests_stash_jenkins](misc/feature_branch_tests_stash_jenkins.md)
 - [Tools and Libs](misc/tools_and_libs.md)
 - [Software Architecture](misc/architecture.md)
+- [AI](misc/ai.md)
 - [talks](misc/talks.md)
