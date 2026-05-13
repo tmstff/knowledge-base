@@ -22,7 +22,8 @@
   * try out:
     * `/tdd` - Test-driven development with red-green-refactor loop. 
 * [openshift-eng/ai-helpers](https://github.com/openshift-eng/ai-helpers/) — Developer productivity plugins and commands for Claude Code and other AI assistants.
-
+  * `/code-review:pr <pr-url-or-number>` — Performs a comprehensive code quality review of a GitHub PR, checking test coverage, idiomatic patterns, DRY/SOLID principles, and build verification.
+  * `/code-review:pre-commit-review` - Performs a comprehensive code quality review of staged and unstaged changes before committing. Otherwise same as :pr 
 ## Misc
 * `CLAUDE.md` - Identity & behavior rules specific to Claude; Define Claude’s role, tone, coding conventions, and persistent rules
 * `CONTEXT.md` - Session snapshot: current goals, active tasks, temporary tribal knowledge
