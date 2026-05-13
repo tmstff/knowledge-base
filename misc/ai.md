@@ -21,6 +21,7 @@
   * `/to-prd` — Synthesizes the current conversation into a product requirements document and posts it as a GitHub issue.
   * try out:
     * `/tdd` - Test-driven development with red-green-refactor loop. 
+    * `/write-a-skill` — Creates new agent skills with proper structure, progressive disclosure, and bundled resources.
 * [openshift-eng/ai-helpers](https://github.com/openshift-eng/ai-helpers/) — Developer productivity plugins and commands for Claude Code and other AI assistants.
   * `/code-review:pr <pr-url-or-number>` — Performs a comprehensive code quality review of a GitHub PR, checking test coverage, idiomatic patterns, DRY/SOLID principles, and build verification.
   * `/code-review:pre-commit-review` - Performs a comprehensive code quality review of staged and unstaged changes before committing. Otherwise same as :pr 
