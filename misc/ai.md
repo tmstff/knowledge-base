@@ -13,3 +13,7 @@
   * `/grill-me` — Intensively questions your plan until every decision branch is resolved, ensuring full alignment before implementation begins.
   * `/to-prd` — Synthesizes the current conversation into a product requirements document and posts it as a GitHub issue.
 * [openshift-eng/ai-helpers](https://github.com/openshift-eng/ai-helpers/) — Developer productivity plugins and commands for Claude Code and other AI assistants.
+
+## Misc
+* `CLAUDE.md` - Identity & behavior rules specific to Claude; Define Claude’s role, tone, coding conventions, and persistent rules
+* `CONTEXT.md` - Session snapshot: current goals, active tasks, temporary tribal knowledge
