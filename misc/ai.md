@@ -4,6 +4,7 @@
 
 * [Warp](https://www.warp.dev/) — An agentic development environment combining a modern terminal, code editor, and AI coding agents.
 * [CodeBurn](https://codeburn.app/) — A local-first CLI/TUI dashboard for tracking AI coding token costs across Claude Code, Cursor, Codex, and others.
+  * `codeburn report -p today --refresh 60`
 * [Claude](https://claude.ai/)
   * `/clear` — Wipes all conversation history for a hard reset; use at task boundaries when switching to something unrelated.
   * `/resume` — Opens a session picker or jumps directly to a named past session to pick up where you left off.
