@@ -13,6 +13,14 @@
   * `/plugin marketplace add <owner>/<repo>` — Adds a skill marketplace from a GitHub repository.
   * `esc` — Interrupts the current thinking or execution mid-response.
   * `esc esc` — Opens a message picker to rewind the conversation to a previous point and branch from there.
+  * ~/.claude/settings.json
+    ```
+    "permissions": {
+        "allow": ["Bash(npm run *)", "Read(./src/**)"],
+        "ask":   ["Bash(git push *)"],
+        "deny":  ["Bash(rm *)", "Read(./.env*)"]
+    }
+    ```
 
 ## Skills
 
