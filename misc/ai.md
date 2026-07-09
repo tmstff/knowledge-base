@@ -2,7 +2,7 @@
 
 ## Tools
 
-* [Warp](https://www.warp.dev/) — An agentic development environment combining a modern terminal, code editor, and AI coding agents.
+* [Supacode](https://supacode.sh/) — Native macOS app for running 50+ coding agents in parallel in isolated git worktrees from a single terminal interface.
 * [CodeBurn](https://codeburn.app/) — A local-first CLI/TUI dashboard for tracking AI coding token costs across Claude Code, Cursor, Codex, and others.
   * `codeburn report -p today --refresh 60`
 * [Claude](https://claude.ai/)
@@ -21,6 +21,9 @@
         "deny":  ["Bash(rm *)", "Read(./.env*)"]
     }
     ```
+* Sandboxing
+  * [OpenShell](https://github.com/NVIDIA/OpenShell) — NVIDIA's safe private runtime for autonomous AI agents; isolates each agent in a sandboxed container with policy-enforced network and filesystem controls.
+  * [sbx](https://github.com/docker/sbx-releases) — Docker Sandboxes; gives AI tools controlled containerized access to filesystem, network, and tools without risking the host machine.
 
 ## Skills
 
@@ -34,7 +37,7 @@
 * [openshift-eng/ai-helpers](https://github.com/openshift-eng/ai-helpers/) — Developer productivity plugins and commands for Claude Code and other AI assistants.
   * `/code-review:pr <pr-url-or-number>` — Performs a comprehensive code quality review of a GitHub PR, checking test coverage, idiomatic patterns, DRY/SOLID principles, and build verification.
   * `/code-review:pre-commit-review` - Performs a comprehensive code quality review of staged and unstaged changes before committing. Otherwise same as :pr 
-* [aro-ai-tools](https://github.com/openshift-online/aro-ai-tools)
+* [aro-ai-tools](https://github.com/openshift-online/aro-ai-tools) — AI skills and plugins for querying ARO (Azure Red Hat OpenShift) metrics and logs through AI coding agents.
 
 ## Misc
 * `CLAUDE.md` - Identity & behavior rules specific to Claude; Define Claude’s role, tone, coding conventions, and persistent rules
