@@ -11,6 +11,9 @@
 # production
 **/build
 
+# scratch
+.scratch/
+
 # misc
 .DS_Store
 .env.local
