@@ -42,3 +42,4 @@
 ## Misc
 * `CLAUDE.md` - Identity & behavior rules specific to Claude; Define Claude’s role, tone, coding conventions, and persistent rules
 * `CONTEXT.md` - Session snapshot: current goals, active tasks, temporary tribal knowledge
+* [AI Behavior Profiles](ai-behavior-profiles.md) — How to create situation-specific profiles (Coding, Reviewing, Debugging, etc.) that load globally in Claude Code and Copilot from a single source-of-truth file.
