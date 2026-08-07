@@ -72,9 +72,27 @@ Add to `~/.vscode/settings.json` (user-level, not workspace):
 
 Global — no per-repo `.github/copilot-instructions.md` needed.
 
-## Copilot CLI (`gh copilot`)
+## Copilot CLI (new `github/copilot-cli`)
 
-No known global config mechanism. VS Code is the fallback.
+> Note: old `gh copilot` extension archived Oct 2025 — no custom instructions support. Use the new standalone [GitHub Copilot CLI](https://github.com/github/copilot-cli).
+
+Global instructions file — `~/.copilot/copilot-instructions.md`, auto-loaded every session.
+
+Symlink the source file into `~/.copilot/`, then include via `@`:
+
+```bash
+mkdir -p ~/.copilot
+ln -s ~/repos/personal/ai-profiles/ai-profiles.md ~/.copilot/ai-profiles.md
+```
+
+`~/.copilot/copilot-instructions.md`:
+```markdown
+@ai-profiles.md
+```
+
+Keeps `copilot-instructions.md` as a real file (add Copilot-specific overrides below the `@` line if needed). Source of truth stays in the git repo.
+
+Also supports: `.github/copilot-instructions.md` (repo-level), path-specific `*.instructions.md` files, `AGENTS.md`, `CLAUDE.md`. Use `/instructions` in-session to see which files are active.
 
 ## Version Control
 
