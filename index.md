@@ -31,6 +31,8 @@
 
 ## AI
 - [AI](ai/ai.md)
+  - [AI Behavior Profiles](ai-behavior-profiles.md) — How to create situation-specific profiles (Coding, Reviewing, Debugging, etc.) that load globally in Claude Code and Copilot from a single source-of-truth file.
+  - [Claude Multi-Agent Patterns](claude-multi-agent-patterns.md) — When and how to use multiple agents together: role assignment, coordinator/worker patterns, fan-out, advisor agents, and which API surface to use.
 
 
 ## Misc

@@ -39,7 +39,8 @@
   * `/code-review:pre-commit-review` - Performs a comprehensive code quality review of staged and unstaged changes before committing. Otherwise same as :pr 
 * [aro-ai-tools](https://github.com/openshift-online/aro-ai-tools) — AI skills and plugins for querying ARO (Azure Red Hat OpenShift) metrics and logs through AI coding agents.
 
+## Patterns & Concepts
+* [Claude Multi-Agent Patterns](claude-multi-agent-patterns.md) — When and how to use multiple agents together: role assignment, coordinator/worker patterns, fan-out, advisor agents, and which API surface to use.
+
 ## Misc
-* `CLAUDE.md` - Identity & behavior rules specific to Claude; Define Claude’s role, tone, coding conventions, and persistent rules
-* `CONTEXT.md` - Session snapshot: current goals, active tasks, temporary tribal knowledge
 * [AI Behavior Profiles](ai-behavior-profiles.md) — How to create situation-specific profiles (Coding, Reviewing, Debugging, etc.) that load globally in Claude Code and Copilot from a single source-of-truth file.
