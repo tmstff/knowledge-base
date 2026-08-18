@@ -109,3 +109,58 @@ Three ways to get Claude to use a sub-agent:
 Copilot CLI uses **runtime intent matching** — the dispatcher automatically routes a task to an agent based on `description` similarity, without explicit invocation syntax.
 
 Claude Code uses **explicit tool calls** — the coordinator (or the user) consciously selects which agent to invoke. The `description` guides that selection, but the routing is deliberate, not automatic. This gives more predictable behaviour at the cost of requiring the coordinator to make the delegation decision explicitly.
+
+## Versioned and Shareable Agent Config
+
+Keep agent definitions in a personal git repo and symlink the tool-specific directories into it. One source of truth; changes tracked in version control; shareable across machines.
+
+### Pattern
+
+```
+~/repos/personal/ai-config/agents/          ← source of truth (own git repo)
+        ├── coder.md                        ← Claude Code agents (*.md)
+        ├── reviewer.md
+        └── copilot/
+            ├── coder.agent.md            ← Copilot CLI agents (*.agent.md)
+            └── reviewer.agent.md
+
+~/.claude/agents/   → ~/repos/personal/ai-config/agents/         (Claude Code)
+~/.copilot/agents/  → ~/repos/personal/ai-config/agents/copilot/ (Copilot CLI)
+```
+
+```bash
+ln -s ~/repos/personal/ai-config/agents ~/.claude/agents
+ln -s ~/repos/personal/ai-config/agents/copilot ~/.copilot/agents
+```
+
+### Referencing Profiles Instead of Duplicating
+
+Agent prompts should reference a shared profile file rather than copy its content. When the profile changes, agents in a fresh session pick it up automatically.
+
+**Claude Code** — profile is loaded via `CLAUDE.md` (`@/path/to/ai-profiles.md`), so the agent body just says which profile to apply:
+
+```markdown
+---
+name: coder
+description: Writes or edits code. Applies the Coding profile from ai-profiles.md.
+tools: [Read, Edit, Write, Bash]
+---
+
+Apply the **Coding** profile defined in ai-profiles.md (loaded via CLAUDE.md). Follow all rules exactly, including the base layer rules.
+```
+
+**Copilot CLI**:
+
+```yaml
+---
+name: coder
+description: >
+  Writes, edits, or creates code. Use for implementing features, fixing bugs,
+  refactoring, or any task that produces or modifies code.
+tools: ["*"]
+---
+
+Apply the **Coding** profile defined in ai-profiles.md (loaded via copilot-instructions.md). Follow all rules in that profile exactly, including the base layer rules.
+```
+
+See [AI Behavior Profiles](ai-behavior-profiles.md) for how to set up the shared profile file.
