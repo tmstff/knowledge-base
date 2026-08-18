@@ -44,7 +44,7 @@ Each profile should define:
 One source-of-truth markdown file, referenced by each tool's global config. No per-repo setup needed.
 
 ```
-~/repos/personal/ai-profiles/ai-profiles.md   ← source of truth (own git repo)
+~/repos/personal/ai-config/ai-profiles.md   ← source of truth (own git repo)
         │
         ├── Claude Code   ~/.claude/CLAUDE.md  →  @/path/to/ai-profiles.md
         └── VS Code       ~/.vscode/settings.json  →  copilot instructions file ref
@@ -55,7 +55,7 @@ One source-of-truth markdown file, referenced by each tool's global config. No p
 Add to `~/.claude/CLAUDE.md`:
 
 ```markdown
-@/Users/you/repos/personal/ai-profiles/ai-profiles.md
+@/Users/you/repos/personal/ai-config/ai-profiles.md
 ```
 
 Loaded automatically on every session. Project-level `CLAUDE.md` files stack on top.
@@ -66,7 +66,7 @@ Add to `~/.vscode/settings.json` (user-level, not workspace):
 
 ```json
 "github.copilot.chat.codeGeneration.instructions": [
-  { "file": "/Users/you/repos/personal/ai-profiles/ai-profiles.md" }
+  { "file": "/Users/you/repos/personal/ai-config/ai-profiles.md" }
 ]
 ```
 
@@ -82,7 +82,7 @@ Symlink the source file into `~/.copilot/`, then include via `@`:
 
 ```bash
 mkdir -p ~/.copilot
-ln -s ~/repos/personal/ai-profiles/ai-profiles.md ~/.copilot/ai-profiles.md
+ln -s ~/repos/personal/ai-config/ai-profiles.md ~/.copilot/ai-profiles.md
 ```
 
 `~/.copilot/copilot-instructions.md`:
@@ -96,7 +96,7 @@ Also supports: `.github/copilot-instructions.md` (repo-level), path-specific `*.
 
 ## Version Control
 
-Keep `ai-profiles.md` in its own repo (`~/repos/personal/ai-profiles/`). Separate from `~/.claude/` config so it can be shared without exposing other personal settings.
+Keep `ai-profiles.md` in its own repo (`~/repos/personal/ai-config/`). Separate from `~/.claude/` config so it can be shared without exposing other personal settings.
 
 ## Sharing / Repo-Specific Layers
 
