@@ -47,8 +47,28 @@ One source-of-truth markdown file, referenced by each tool's global config. No p
 ~/repos/personal/ai-config/ai-profiles.md   ← source of truth (own git repo)
         │
         ├── Claude Code   ~/.claude/CLAUDE.md  →  @/path/to/ai-profiles.md
+        ├── OpenCode      ~/.config/opencode/opencode.jsonc  →  "instructions": [...]
         └── VS Code       ~/.vscode/settings.json  →  copilot instructions file ref
 ```
+
+## OpenCode (V2)
+
+Add to global config `~/.config/opencode/opencode.jsonc`:
+
+```jsonc
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["~/repos/tmstff/ai-config/ai-profiles.md"],
+  // ...other settings
+}
+```
+
+- `~/` paths resolve from the home directory; files listed here load after any `AGENTS.md` files, in every session ([docs](https://opencode.ai/v2/docs/instructions/#configuration)).
+- OpenCode V2 does **not** read `~/.claude/CLAUDE.md` and does not resolve Claude's `@file` includes. Only `AGENTS.md` files and `instructions` are loaded ([docs](https://opencode.ai/v2/docs/instructions/#scope)).
+- No restart needed. OpenCode watches config and instruction files, and running sessions get the new or changed content before the next prompt.
+- Alternative: a global `~/.config/opencode/AGENTS.md` file. That file can't include other files, so it would need a copy or symlink of the profiles file.
+
+**Verified** (opencode v2.2.5, 2026-11-02): after the config was saved, the running session got an instruction block headed `Instructions from: /Users/tsteffen/repos/tmstff/ai-config/ai-profiles.md` before the next model request.
 
 ## Claude Code
 
