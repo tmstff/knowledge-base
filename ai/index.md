@@ -2,9 +2,9 @@
 
 ## Tools
 
-* [OpenCode](https://opencode.ai/v2/docs/cli/) — Open-source terminal coding agent that can run Claude (e.g. via Google Vertex or GitHub Copilot) and other models from many providers.
+* [OpenCode](https://opencode.ai/v2/docs/cli/) — Open-source terminal coding agent that can run models from many providers.
   * config: `~\.config\opencode\opencode.json`
-* [Claude](https://claude.ai/)
+* [Claude](https://claude.ai/) — Terminal coding agent.
   * `/clear` — Wipes all conversation history for a hard reset; use at task boundaries when switching to something unrelated.
   * `/resume` — Opens a session picker or jumps directly to a named past session to pick up where you left off.
   * `/btw` — Asks an ephemeral side question without adding it to the conversation context.
