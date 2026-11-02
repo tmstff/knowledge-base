@@ -2,9 +2,8 @@
 
 ## Tools
 
-* [Supacode](https://supacode.sh/) — Native macOS app for running 50+ coding agents in parallel in isolated git worktrees from a single terminal interface.
-* [CodeBurn](https://codeburn.app/) — A local-first CLI/TUI dashboard for tracking AI coding token costs across Claude Code, Cursor, Codex, and others.
-  * `codeburn report -p today --refresh 60`
+* [OpenCode](https://opencode.ai/v2/docs/cli/) — Open-source terminal coding agent that can run Claude (e.g. via Google Vertex or GitHub Copilot) and other models from many providers.
+  * config: `~\.config\opencode\opencode.json`
 * [Claude](https://claude.ai/)
   * `/clear` — Wipes all conversation history for a hard reset; use at task boundaries when switching to something unrelated.
   * `/resume` — Opens a session picker or jumps directly to a named past session to pick up where you left off.
@@ -21,6 +20,9 @@
         "deny":  ["Bash(rm *)", "Read(./.env*)"]
     }
     ```
+* [Supacode](https://supacode.sh/) — Native macOS app for running 50+ coding agents in parallel in isolated git worktrees from a single terminal interface.
+* [CodeBurn](https://codeburn.app/) — A local-first CLI/TUI dashboard for tracking AI coding token costs across Claude Code, Cursor, Codex, and others.
+  * `codeburn report -p today --refresh 60`
 * Sandboxing
   * [OpenShell](https://github.com/NVIDIA/OpenShell) — NVIDIA's safe private runtime for autonomous AI agents; isolates each agent in a sandboxed container with policy-enforced network and filesystem controls.
   * [sbx](https://github.com/docker/sbx-releases) — Docker Sandboxes; gives AI tools controlled containerized access to filesystem, network, and tools without risking the host machine.
@@ -43,5 +45,5 @@
 * [Claude Multi-Agent Patterns](claude-multi-agent-patterns.md) — When and how to use multiple agents together: role assignment, coordinator/worker patterns, fan-out, advisor agents, and how to use agents with Claude Code cli.
 
 ## Misc
-* [OpenCode Providers: Vertex, Copilot, Cursor](ai/opencode-providers.md) — How to add Google Vertex, GitHub Copilot and Cursor as OpenCode providers, restrict to them via policies, and select models.
-* [AI Behavior Profiles](ai-behavior-profiles.md) — How to create situation-specific profiles (Coding, Reviewing, Debugging, etc.) that load globally in Claude Code and Copilot from a single source-of-truth file.
+* [OpenCode Providers: Vertex, Copilot, Cursor](opencode-providers.md) — How to add Google Vertex, GitHub Copilot and Cursor as OpenCode providers, restrict to them via policies, and select models.
+* [AI Behavior Profiles](ai-behavior-profiles.md) — How to create situation-specific profiles (Coding, Reviewing, Debugging, etc.) that load globally in Claude Code, OpenCode and Copilot from a single source-of-truth file.
