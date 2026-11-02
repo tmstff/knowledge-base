@@ -43,4 +43,5 @@
 * [Claude Multi-Agent Patterns](claude-multi-agent-patterns.md) — When and how to use multiple agents together: role assignment, coordinator/worker patterns, fan-out, advisor agents, and how to use agents with Claude Code cli.
 
 ## Misc
+* [OpenCode Providers: Vertex, Copilot, Cursor](ai/opencode-providers.md) — How to add Google Vertex, GitHub Copilot and Cursor as OpenCode providers, restrict to them via policies, and select models.
 * [AI Behavior Profiles](ai-behavior-profiles.md) — How to create situation-specific profiles (Coding, Reviewing, Debugging, etc.) that load globally in Claude Code and Copilot from a single source-of-truth file.
